@@ -202,7 +202,7 @@ var app = new Vue({
             },
             {
                 id: 18,
-                name: 'Shign',
+                name: 'shign',
                 img: 'img/maker/shign.png',
                 links: []
             },
