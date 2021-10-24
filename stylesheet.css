@@ -212,6 +212,10 @@ h1 {
     align-items: center;
 }
 
+.download-button.countdown {
+    cursor: default;
+}
+
 .download-button:hover {
     background-color: var(--download-color-highlight);
 }

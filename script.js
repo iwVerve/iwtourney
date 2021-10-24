@@ -80,22 +80,14 @@ var app = new Vue({
     el: '#app',
     data: {
         gameList: [
-            {
+            /*{
                 id: 1,
                 title: 'Game title',
-                tags: [{id: 1, tag: 'Needle', class: 'needle'}, {id: 2, tag: 'Adventure', class: 'adventure'}],
+                tags: [{id: 1, tag: 'Needle', class: 'needle'}],
                 maker: 'Game maker',
                 desc: 'Game description',
                 img: 'img/game/01.png'
-            },
-            {
-                id: 2,
-                title: 'Markiplier',
-                tags: [{id: 1, tag: 'Avoidance', class: 'avoidance'}],
-                maker: 'Marko Pliar',
-                desc: 'Mark Edward Fischbach (born June 28, 1989),[4] known online as Markiplier, is an American YouTuber and podcast host. Originally from Honolulu, Hawaii,[5][6] he began his career in Cincinnati, Ohio, and is currently based in Los Angeles, California. As well as uploading videos on his main YouTube channel, he is the co-founder of clothing company Cloak with fellow YouTuber Jacksepticeye,[7] and the co-host of the now defunct Unus Annus channel. ',
-                img: 'img/game/02.png'
-            }
+            }*/
         ],
         makerList: [
             {
@@ -148,8 +140,8 @@ var app = new Vue({
             },
             {
                 id: 9,
-                name: 'Juan',
-                img: 'img/maker/juan.png',
+                name: 'Juan285',
+                img: 'img/maker/juan.jpg',
                 links: [{id: 1, link: 'https://twitter.com/slut285', img: 'img/icon/twitter.png'}]
             },
             {
@@ -190,7 +182,7 @@ var app = new Vue({
             },
             {
                 id: 16,
-                name: 'Renex',
+                name: 'renex',
                 img: 'img/maker/renex.png',
                 links: [{id: 1, link: 'https://twitter.com/renex_64', img: 'img/icon/twitter.png'}]
             },
@@ -216,7 +208,7 @@ var app = new Vue({
                 id: 20,
                 name: 'Synthasmagoria',
                 img: 'img/maker/synth.png',
-                links: [{id: 1, link: 'https://twitter.com/Skulldude89', img: 'img/icon/twitter.png'}]
+                links: [{id: 1, link: 'https://twitter.com/SynthasA', img: 'img/icon/twitter.png'}]
             },
             {
                 id: 21,
