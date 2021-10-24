@@ -169,6 +169,12 @@ var app = new Vue({
                 links: [{id: 1, link: 'https://twitter.com/p00ks1', img: 'img/icon/twitter.png'}]
             },
             {
+                id: 24,
+                name: 'Poi Moi',
+                img: 'img/maker/poi.png',
+                links: []
+            },
+            {
                 id: 12,
                 name: 'Popop614',
                 img: 'img/maker/popop.png',
