@@ -7,7 +7,6 @@
 
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://kit.fontawesome.com/494b74c141.js" crossorigin="anonymous"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +44,13 @@
 
                     <div class="tab" id="makers">
                         <h1>Makers</h1>
-                        <p>itoretu sfd v,mcb nfkjhg h ga</p>
+                        <div class="maker-container">
+                            <maker
+                                v-for="item in makerList"
+                                v-bind:maker="item"
+                                v-bind:key="item.id"
+                            ></maker>
+                        </div>
                     </div>
                     
                 </div>

@@ -93,7 +93,7 @@ h1 {
     text-align: center;
 }
 
-.gamecontainer {
+.game-container {
     display: flex;
     flex-flow: column nowrap;
 }
@@ -212,18 +212,47 @@ h1 {
     align-items: center;
 }
 
-.download-button::before {
-    position: relative;
-    right: 0.25em;
-    font-family: 'Font Awesome 5 Free';
-    content: ' \f019';
-    font-weight: 900;
-}
-
 .download-button:hover {
     background-color: var(--download-color-highlight);
 }
 
 .download-icon {
     margin: 0 0.6rem 0 0;
+}
+
+.maker-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.maker {
+    padding: 0.25em;
+    display: flex;
+    flex-direction: row;
+}
+
+.maker-icon {
+    margin: 0.25em 0.5em;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.maker-info {
+    width: 280px;
+    margin: 0.25em 0.5em;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.maker-name {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.maker-links {
+    margin-left: 0.5em;
+    display: flex;
+    flex-flow: row nowrap;
 }
