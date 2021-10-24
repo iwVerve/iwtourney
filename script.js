@@ -160,16 +160,16 @@ var app = new Vue({
             },
             {
                 id: 11,
-                name: 'P00ks',
+                name: 'p00ks',
                 img: 'img/maker/p00ks.png',
                 links: [{id: 1, link: 'https://twitter.com/p00ks1', img: 'img/icon/twitter.png'}]
             },
-            /*{
+            {
                 id: 12,
                 name: 'Popop614',
-                img: 'img/maker/p00ks.png',
+                img: 'img/maker/popop.png',
                 links: [{id: 1, link: 'https://twitter.com/popop6143', img: 'img/icon/twitter.png'}]
-            },*/
+            },
             {
                 id: 13,
                 name: 'RandomChaos_',
@@ -214,18 +214,24 @@ var app = new Vue({
             },
             {
                 id: 20,
+                name: 'Synthasmagoria',
+                img: 'img/maker/synth.png',
+                links: [{id: 1, link: 'https://twitter.com/Skulldude89', img: 'img/icon/twitter.png'}]
+            },
+            {
+                id: 21,
                 name: 'Verve',
                 img: 'img/maker/verve.png',
                 links: [{id: 1, link: 'https://twitter.com/IwVerve', img: 'img/icon/twitter.png'}]
             },
             {
-                id: 21,
+                id: 22,
                 name: 'Wonderful',
                 img: 'img/maker/wonderful.jpg',
                 links: [{id: 1, link: 'https://twitter.com/wonderfulx_x', img: 'img/icon/twitter.png'}]
             },
             {
-                id: 22,
+                id: 23,
                 name: 'YaBoiMarcAntony',
                 img: 'img/maker/ybma.png',
                 links: [{id: 1, link: 'https://twitter.com/YaBoiMarcAnton1', img: 'img/icon/twitter.png'}]
