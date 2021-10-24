@@ -10,30 +10,30 @@
     --download-color-highlight: hsla(0, 0%, 75%, 1);
 
     --button-transition: 0.2s;
-    --border-radius: 12px;
+    --border-radius: 0.8rem;
 }
 
 body {
-    padding: 0 min(120px, 10%) 40px min(120px, 10%);
+    padding: 0 calc(10% - 2em) 3em calc(10% - 2em);
     background-image: url("img/pattern.png");
 
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Coda', cursive;
 }
 
 .title {
-    margin: 40px 0;
+    margin: 3em 0;
     display: flex;
     justify-content: center;
 }
 
 .logo {
-    margin: 0 20px;
+    margin: 0 1.5em;
     user-select: none;
-    height: calc(10vw + 64px);
+    height: calc(10vw + 4em);
 }
 
 .content {
-    padding: 20px;
+    padding: 1.5em;
 
     background-color: var(--background-color);
     border-radius: var(--border-radius);
@@ -46,19 +46,24 @@ body {
 }
 
 .tab-button {
-    margin: 0 10px;
-    padding: 10px;
-    min-width: 180px;
+    margin: 0 0.4em;
+    width: 10em;
+    height: 4em;
 
-    text-align: center;
-    font-size: large;
+    font-size: 1.25em;
     font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     background-color: var(--button-color);
     border-radius: var(--border-radius);
     user-select: none;
     cursor: pointer;
-    transition: var(--button-transition);
+    transition:
+        background-color var(--button-transition),
+        box-shadow var(--button-transition);
 }
 
 @media (max-width: 1280px) {
@@ -66,8 +71,9 @@ body {
         flex-flow: column;
     }
     .tab-button {
+        width: auto;
         flex-grow: 1;
-        margin: 4px 10px;
+        margin: 0.25em 0.6em;
     }
 }
 
@@ -76,7 +82,7 @@ body {
 }
 
 .tab-button.active {
-    box-shadow: var(--button-underline-color) 0px -5px inset;
+    box-shadow: var(--button-underline-color) 0px -0.25em inset;
 }
 
 .tab {
@@ -93,8 +99,8 @@ h1 {
 }
 
 .game {
-    margin: 10px calc(25% - 100px);
-    padding: 12px;
+    margin: 0.6em calc(25% - 6.25em);
+    padding: 0.75em;
 
     border-radius: var(--border-radius);
     background-color: var(--game-color);
@@ -105,8 +111,8 @@ h1 {
 }
 
 .game-thumbnail {
-    width: 120px;
-    height: 80px;
+    width: 7.5rem;
+    height: 5rem;
     border-radius: var(--border-radius);
 }
 
@@ -115,7 +121,7 @@ h1 {
 }
 
 .game-title-tags {
-    padding: 0 20px;
+    padding: 0 1.2rem;
     display: flex;
 
     flex-flow: row wrap;
@@ -124,13 +130,16 @@ h1 {
 }
 
 .game-title {
-    margin: 0 10px;
+    margin: 0 0.6rem;
     text-align: center;
     font-weight: bold;
 }
 
-.game-tag {
-    margin: 0 10px;
+.needle,
+.adventure,
+.avoidance
+{
+    margin: 0 0.6rem;
     padding: 3px 8px;
 
     color: white;
@@ -139,38 +148,38 @@ h1 {
     user-select: none;
 }
 
-.game-tag.needle {
+.needle {
     background-color: red;
 }
 
-.game-tag.adventure {
+.adventure {
     background-color: green;
 }
 
-.game-tag.avoidance {
+.avoidance {
     background-color: blue;
 }
 
 .game-makers {
-    margin: 8px 0;
-    padding: 0 40px;
+    margin: 0.5rem 0;
+    padding: 0 2.5rem;
     font-style: italic;
     text-align: center;
 }
 
 .game-description {
-    margin: 8px 0;
-    padding: 0 40px;
+    margin: 0.5rem 0;
+    padding: 0 2rem;
     text-align: justify;
 }
 
 @media (max-width: 1280px) {
     .game {
         flex-direction: column;
-        margin: 10px 10px;
+        margin: 0.6rem 0.6rem;
     }
     .game-info-container {
-        margin: 10px 0;
+        margin: 0.6rem 0;
     }
     .game-title-tags {
         padding: 0;
@@ -184,8 +193,8 @@ h1 {
 }
 
 .download-button {
-    width: 120px;
-    padding: 12px;
+    width: 6.5rem;
+    padding: 0.75rem;
 
     background-color: var(--download-color);
     text-align: center;
@@ -193,6 +202,9 @@ h1 {
     transition: var(--button-transition);
     user-select: none;
     cursor: pointer;
+    flex-shrink: 0;
+    text-decoration: none;
+    color: black;
 
     display: flex;
     flex-flow: row nowrap;
@@ -200,10 +212,18 @@ h1 {
     align-items: center;
 }
 
+.download-button::before {
+    position: relative;
+    right: 0.25em;
+    font-family: 'Font Awesome 5 Free';
+    content: ' \f019';
+    font-weight: 900;
+}
+
 .download-button:hover {
     background-color: var(--download-color-highlight);
 }
 
 .download-icon {
-    margin: 0 10px 0 0;
+    margin: 0 0.6rem 0 0;
 }
