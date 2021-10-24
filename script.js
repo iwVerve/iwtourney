@@ -1,6 +1,17 @@
-tabCurrent = "games";
+tabCurrent = 'games';
 
 switching = false;
+
+const nextGame = new Date(2021, 10, 1, 0, 0, 0).getTime();
+function updateTimer() {
+    var t = nextGame - Date.now();
+    var days = Math.floor(t / (24*60*60*1000));
+    var hours = Math.floor((t % (24*60*60*1000)) / (60*60*1000));
+    var minutes = Math.floor((t % (60*60*1000)) / (60*1000));
+    var seconds = Math.floor((t % (60*1000)) / (1000));
+    var str = `${days}:${hours}:${minutes}:${seconds}`;
+    $ ('#nextTimer')[0].innerHTML = str;
+}
 
 function clickTab(id) {
     if (!switching && id != tabCurrent) {
@@ -233,3 +244,4 @@ var app = new Vue({
 });
 
 clickTab("about");
+setInterval(updateTimer, 200);
