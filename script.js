@@ -140,6 +140,12 @@ var app = new Vue({
             },
             {
                 id: 4,
+                name: 'Dono',
+                img: '',
+                links: []
+            },
+            {
+                id: 4,
                 name: 'Duncan',
                 img: 'img/maker/duncan.png',
                 links: [{id: 1, link: 'https://twitter.com/duncanacnud', img: 'img/icon/twitter.png'}]
