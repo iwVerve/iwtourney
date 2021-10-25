@@ -2,7 +2,7 @@ tabCurrent = 'games';
 
 switching = false;
 
-const nextGame = new Date(2021, 10, 1, 0, 0, 0).getTime();
+const nextGame = new Date(2022, 0, 1, 0, 0, 0).getTime();
 function updateTimer() {
     var t = nextGame - Date.now();
     var days = Math.floor(t / (24*60*60*1000));
