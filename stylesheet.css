@@ -18,6 +18,13 @@ body {
     background-image: url("img/pattern.png");
 
     font-family: 'Coda', cursive;
+    font-size: 16px;
+}
+
+@media (max-width: 992px) {
+    body {
+        font-size: 24px;
+    }
 }
 
 .title {
@@ -245,7 +252,7 @@ h1 {
 }
 
 .maker-info {
-    width: 260px;
+    width: 15em;
     margin: 0.25em 0.5em;
     display: flex;
     flex-flow: column nowrap;
