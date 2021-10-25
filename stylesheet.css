@@ -246,8 +246,8 @@ h1 {
 
 .maker-icon {
     margin: 0.25em 0.5em;
-    width: 64px;
-    height: 64px;
+    width: 4em;
+    height: 4em;
     border-radius: 50%;
 }
 
@@ -267,4 +267,9 @@ h1 {
     margin-left: 0.5em;
     display: flex;
     flex-flow: row nowrap;
+}
+
+.maker-link-icon {
+    width: 1.5em;
+    height: 1.5em;
 }

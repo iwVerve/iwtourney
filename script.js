@@ -84,7 +84,7 @@ Vue.component('maker', {
 Vue.component('maker-link', {
     props: ['link'],
     template: `
-    <a :href="link.link" target="_blank"><img :src="link.img"></a>
+    <a :href="link.link" target="_blank"><img class="maker-link-icon" :src="link.img"></a>
     `
 });
 
