@@ -196,7 +196,7 @@ var app = new Vue({
                 id: 32,
                 name: 'Kiiview',
                 img: 'img/maker/kiiview.jpg',
-                links: [{id: 1, link: 'https://twitter.com/kai_2007__', img: 'img/icon/twitter.png'}]
+                links: [{id: 1, link: 'https://twitter.com/Kiiview1', img: 'img/icon/twitter.png'}]
             },
             {
                 id: 33,
