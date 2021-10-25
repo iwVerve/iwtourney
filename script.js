@@ -103,16 +103,34 @@ var app = new Vue({
         ],
         makerList: [
             {
+                id: 25,
+                name: '29th letter',
+                img: 'img/maker/29.png',
+                links: []
+            },
+            {
                 id: 1,
                 name: '128-Up',
                 img: 'img/maker/128-up.png',
                 links: [{id: 1, link: 'https://twitter.com/SpikyShroom', img: 'img/icon/twitter.png'}]
             },
             {
+                id: 26,
+                name: 'AGuyNamedTyler',
+                img: 'img/maker/tyler.png',
+                links: []
+            },
+            {
                 id: 2,
                 name: 'anxKha',
                 img: 'img/maker/anxkha.png',
                 links: []
+            },
+            {
+                id: 27,
+                name: 'Aroxon',
+                img: 'img/maker/aroxon.jpg',
+                links: [{id: 1, link: 'https://twitter.com/Aroxon2', img: 'img/icon/twitter.png'}]
             },
             {
                 id: 3,
@@ -133,10 +151,52 @@ var app = new Vue({
                 links: [{id: 1, link: 'https://twitter.com/ArthurTheGuy', img: 'img/icon/twitter.png'}]
             },
             {
+                id: 28,
+                name: 'FairLight',
+                img: 'img/maker/fairlight.png',
+                links: []
+            },
+            {
+                id: 29,
+                name: 'FancyFishie',
+                img: 'img/maker/fishie.png',
+                links: []
+            },
+            {
+                id: 30,
+                name: 'happy',
+                img: '',
+                links: []
+            },
+            {
                 id: 6,
                 name: 'IanBoy141',
                 img: 'img/maker/ianboy.jpg',
                 links: [{id: 1, link: 'https://twitter.com/IanBoy141', img: 'img/icon/twitter.png'}]
+            },
+            {
+                id: 31,
+                name: 'Jopagu',
+                img: 'img/maker/jopagu.png',
+                links: []
+            },
+            {
+                id: 32,
+                name: 'Kai',
+                img: 'img/maker/kai.jpg',
+                links: [{id: 1, link: 'https://twitter.com/kai_2007__', img: 'img/icon/twitter.png'}]
+            },
+            {
+                id: 32,
+                name: 'Kiiview',
+                img: 'img/maker/kiiview.jpg',
+                links: [{id: 1, link: 'https://twitter.com/kai_2007__', img: 'img/icon/twitter.png'}]
+            },
+            {
+                id: 33,
+                name: 'Kizelf',
+                img: 'img/maker/kizelf.jpg',
+                links: []
             },
             {
                 id: 7,
@@ -169,6 +229,12 @@ var app = new Vue({
                 links: [{id: 1, link: 'https://twitter.com/p00ks1', img: 'img/icon/twitter.png'}]
             },
             {
+                id: 34,
+                name: 'PlayerDash2017',
+                img: '',
+                links: []
+            },
+            {
                 id: 24,
                 name: 'Poi Moi',
                 img: 'img/maker/poi.png',
@@ -199,6 +265,12 @@ var app = new Vue({
                 links: [{id: 1, link: 'https://twitter.com/IwRazzor', img: 'img/icon/twitter.png'}]
             },
             {
+                id: 35,
+                name: 'R3Ked',
+                img: '',
+                links: []
+            },
+            {
                 id: 16,
                 name: 'renex',
                 img: 'img/maker/renex.png',
@@ -226,13 +298,29 @@ var app = new Vue({
                 id: 20,
                 name: 'Synthasmagoria',
                 img: 'img/maker/synth.png',
-                links: [{id: 1, link: 'https://twitter.com/SynthasA', img: 'img/icon/twitter.png'}]
+                links: [
+                    {id: 1, link: 'https://twitter.com/SynthasA', img: 'img/icon/twitter.png'},
+                    {id: 2, link: 'https://synthasmagoria.neocities.org/', img: 'img/icon/page.png'},
+                    {id: 3, link: 'https://synthasmagoria.itch.io/', img: 'img/icon/itch.png'}
+                ]
+            },
+            {
+                id: 36,
+                name: 'Tayashie',
+                img: '',
+                links: []
             },
             {
                 id: 21,
                 name: 'Verve',
                 img: 'img/maker/verve.png',
                 links: [{id: 1, link: 'https://twitter.com/IwVerve', img: 'img/icon/twitter.png'}]
+            },
+            {
+                id: 21,
+                name: 'very cool',
+                img: 'img/maker/very.jpg',
+                links: [{id: 1, link: 'https://twitter.com/verycool_____/photo', img: 'img/icon/twitter.png'}]
             },
             {
                 id: 22,
