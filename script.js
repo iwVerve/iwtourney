@@ -18,7 +18,7 @@ $ (document).ready(function() {
 
     switching = false;
 
-    const nextGame = new Date(2022, 0, 1, 0, 0, 0).getTime();
+    const nextGame = new Date('2022-01-01T18:42:00+01:00').getTime();
     function updateTimer() {
         var t = nextGame - Date.now();
         var days = Math.floor(t / (24*60*60*1000));
@@ -360,7 +360,7 @@ $ (document).ready(function() {
                 {
                     id: 21,
                     name: 'very cool',
-                    img: 'img/maker/very.jpg',
+                    img: 'img/maker/very.png',
                     links: [{id: 1, link: 'https://twitter.com/verycool_____/photo', img: 'img/icon/twitter.png'}]
                 },
                 {
