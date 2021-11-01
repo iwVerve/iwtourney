@@ -148,7 +148,7 @@ $ (document).ready(function() {
                 {
                     id: 3,
                     name: 'Arzztt',
-                    img: 'img/maker/arzztt.png',
+                    img: 'img/maker/arzztt.jpg',
                     links: [{id: 1, link: 'https://twitter.com/arzztt365/', img: 'img/icon/twitter.png'}]
                 },
                 {
@@ -160,7 +160,7 @@ $ (document).ready(function() {
                 {
                     id: 4,
                     name: 'Dono',
-                    img: 'img/maker/dono.png',
+                    img: 'img/maker/dono.jpg',
                     links: []
                 },
                 {
@@ -296,7 +296,7 @@ $ (document).ready(function() {
                 {
                     id: 15,
                     name: 'Razzor',
-                    img: 'img/maker/razzor.png',
+                    img: 'img/maker/razzor.jpg',
                     links: [{id: 1, link: 'https://twitter.com/IwRazzor', img: 'img/icon/twitter.png'}]
                 },
                 {
@@ -360,7 +360,7 @@ $ (document).ready(function() {
                 {
                     id: 21,
                     name: 'very cool',
-                    img: 'img/maker/very.png',
+                    img: 'img/maker/very.jpg',
                     links: [{id: 1, link: 'https://twitter.com/verycool_____/photo', img: 'img/icon/twitter.png'}]
                 },
                 {
