@@ -155,7 +155,8 @@ h6 {
 .needle,
 .adventure,
 .avoidance,
-.luck
+.luck,
+.difficulty
 {
     margin: 0 0.6rem;
     padding: 3px 8px;
@@ -179,7 +180,11 @@ h6 {
 }
 
 .luck {
-    background-color: yellow;
+    background-color: orange;
+}
+
+.difficulty {
+    background-color: black;
 }
 
 .game-makers {

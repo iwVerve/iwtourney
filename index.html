@@ -65,30 +65,24 @@
                         <h1>Games</h1>
 
                         <div class="game-container">
-                            <h3>Current Game</h3>
+                            <!--<h3>Current Game</h3>
+                            <game-item
+                                v-for="item in currentList"
+                                v-bind:game="item"
+                                v-bind:key="item.id"
+                            ></game-item>-->
+                            <!--<h3>Past Games</h3>
+                            <game-item
+                                v-for="item in gameList"
+                                v-bind:game="item"
+                                v-bind:key="item.id"
+                            ></game-item>-->
+                            <h3>Next week's games</h3>
                             <game-item
                                 v-for="item in previewList"
                                 v-bind:game="item"
                                 v-bind:key="item.id"
                             ></game-item>
-                            <h3>Past Games</h3>
-                            <game-item
-                                v-for="item in gameList"
-                                v-bind:game="item"
-                                v-bind:key="item.id"
-                            ></game-item>
-
-                            <div class="game">
-                                <img src="img/game/preview.png" class="game-thumbnail">
-                                <div class="game-info-container">
-                                    <div class="game-title-tags">
-                                        <span class="game-title">???</span>
-                                    </div>
-                                    <p class="game-makers">???</p>
-                                    <p class="game-description"><br></p>
-                                </div>
-                                <div href="" class="download-button countdown nextTimer" target="_blank">0:00:00</div>
-                            </div>
                         </div>
                     </div>
 

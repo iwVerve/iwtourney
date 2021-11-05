@@ -18,7 +18,7 @@ $ (document).ready(function() {
 
     switching = false;
 
-    const nextGame = new Date('2022-01-01T18:42:00+01:00').getTime();
+    const nextGame = new Date('2021-11-13T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = nextGame - Date.now();
         var days = Math.floor(t / (24*60*60*1000));
@@ -26,7 +26,7 @@ $ (document).ready(function() {
         var minutes = Math.floor((t % (60*60*1000)) / (60*1000));
 
         var seconds = Math.floor((t % (60*1000)) / (1000));
-        var str = `${days}:${hours}:${(minutes < 10) ? '0' : ''}${minutes}:${(seconds < 10) ? '0' : ''}${seconds}`;
+        var str = `${days}:${(hours < 10) ? '0' : ''}${hours}:${(minutes < 10) ? '0' : ''}${minutes}:${(seconds < 10) ? '0' : ''}${seconds}`;
         for (const el of $ ('.nextTimer')) {
             el.innerHTML = str;
         }
@@ -95,6 +95,17 @@ $ (document).ready(function() {
     var app = new Vue({
         el: '#app',
         data: {
+            currentList: [
+                /*{
+                    id: 1,
+                    title: '???',
+                    tags: [],
+                    maker: '???',
+                    desc: '',
+                    img: 'img/game/preview.png',
+                    link: ''
+                }*/
+            ],
             gameList: [
                 /*{
                     id: 1,
@@ -110,8 +121,17 @@ $ (document).ready(function() {
                 {
                     id: 1,
                     title: '???',
-                    tags: [],
-                    maker: '???',
+                    tags: [{id: 1, tag: '▲45', class: 'difficulty'}, {id: 2, tag: 'Adventure', class: 'adventure'}],
+                    maker: 'wonderful',
+                    desc: '',
+                    img: 'img/game/preview.png',
+                    link: ''
+                },
+                {
+                    id: 2,
+                    title: '???',
+                    tags: [{id: 1, tag: '▲40', class: 'difficulty'}, {id: 2, tag: 'Luck', class: 'luck'}],
+                    maker: 'arzztt',
                     desc: '',
                     img: 'img/game/preview.png',
                     link: ''
