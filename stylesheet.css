@@ -193,6 +193,7 @@ h6 {
     margin: 0.5rem 0;
     padding: 0 2rem;
     text-align: justify;
+    min-height: 1.5rem;
 }
 
 @media (max-width: 1280px) {
@@ -241,9 +242,6 @@ h6 {
     cursor: default;
 }
 
-.download-button:hover {
-    background-color: var(--download-color-highlight);
-}
 
 .download-icon {
     margin: 0 0.6rem 0 0;
@@ -290,4 +288,35 @@ h6 {
 .maker-link-icon {
     width: 1.5em;
     height: 1.5em;
+}
+
+.button {
+    width: 10rem;
+    padding: 0.75rem;
+
+    background-color: var(--download-color);
+    text-align: center;
+    border-radius: var(--border-radius);
+    transition: var(--button-transition);
+    user-select: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover,
+.download-button:hover {
+    background-color: var(--download-color-highlight);
+}
+
+.centered-flex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }

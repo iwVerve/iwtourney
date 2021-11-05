@@ -35,31 +35,43 @@
                             We have a lot of different games, including adventure games both big and small, needle games, avoidance games, and of course the coveted "luck" games.
                             Many different creative styles from all of our spectacular game makers, I hope you will all enjoy participating in this event, we tried to make it the best we could!
                             <br><br>
-
-                            <h3>Rules</h3>
-                            The I Wanna Tourney is a long multi-week event that will span from <code>[whenever]</code> to <code>[whenever]</code>.
+                            
+                            But what exactly is the I Wanna Tourney?
+                            It is a long multi-week event that will span from November 13th to March 12th.
                             Every Saturday at 12PM EST the I Wanna Tourney website will be updated to include that week's game(s)!
                             Typically it will be 2 games a week from different genres, but there will be a few single game weeks if certain fangames are too big.
-                            Next to each game will be the ranking criteria, which can range from a wide variety of possibilities, but it will typically boil down to either blind playthrough fastest time or fewest deaths.
-                            However there will be special exceptions for many games, so stay on the lookout for those!      
+                            Next to each game will be the ranking criteria, which can range from a wide variety of possibilities, but it will typically boil down to either blind playthrough fastest time or least deaths.
+                            However there will be special exceptions for many games, so stay on the lookout for those!
                             <br><br>
-
-                            As soon as the site is updated with new games, you will have until Thursday at 12:00PM EST to post your screenshots in that week's submission channels.
-                            Only your first playthrough of the game will be counted for ranking, unless specified differently for certain weeks.
-                            If you rank in the top 3 spots, you will need video proof to back up your screenshot.
+                            
+                            As soon as the site is updated with new games, you will have until Thursday at 12:00PM EST to submit your screenshots in the submission form.
+                            Only your first blind playthrough of the game will be counted for ranking, unless specified differently for certain weeks.
+                            If you rank in the top 3 spots, you will need video proof to back up your screenshot (if the ranking criteria is fastest time, then you will also need a live timer captured alongside the game).
                             Also these games are meant to be played blind, which means having not seen the game prior to playing it yourself.
                             We will be watching videos to look for suspicious activity.
                             So tl;dr, you have until Thursday 12:00PM EST to submit your runs to be ranked on the leaderboards.
                             <br><br>
 
-                            If you want to participate in the fun then please, join the discord!
-                            It's where all ranking submissions will be held! <code>[Discord link]</code>
+                            <div class="centered-flex">
+                                <a class="button" href="https://discord.gg/FPgrWerTnn" target="_blank">
+                                    <img class="download-icon" src="img/icon/discord.png">
+                                    Discord server
+                                </a>
+                            </div>
                         </div>
                     </div>
 
                     <div class="tab" id="games">
                         <h1>Games</h1>
+
                         <div class="game-container">
+                            <h3>Current Game</h3>
+                            <game-item
+                                v-for="item in previewList"
+                                v-bind:game="item"
+                                v-bind:key="item.id"
+                            ></game-item>
+                            <h3>Past Games</h3>
                             <game-item
                                 v-for="item in gameList"
                                 v-bind:game="item"
@@ -75,7 +87,7 @@
                                     <p class="game-makers">???</p>
                                     <p class="game-description"><br></p>
                                 </div>
-                                <div href="" class="download-button countdown" id="nextTimer" target="_blank">0:00:00</div>
+                                <div href="" class="download-button countdown nextTimer" target="_blank">0:00:00</div>
                             </div>
                         </div>
                     </div>
@@ -85,6 +97,14 @@
                         <div class="maker-container">
                             <maker
                                 v-for="item in makerList"
+                                v-bind:maker="item"
+                                v-bind:key="item.id"
+                            ></maker>
+                        </div>
+                        <h2>Event art</h2>
+                        <div class="maker-container">
+                            <maker
+                                v-for="item in alex"
                                 v-bind:maker="item"
                                 v-bind:key="item.id"
                             ></maker>

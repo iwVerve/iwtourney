@@ -27,7 +27,9 @@ $ (document).ready(function() {
 
         var seconds = Math.floor((t % (60*1000)) / (1000));
         var str = `${days}:${hours}:${(minutes < 10) ? '0' : ''}${minutes}:${(seconds < 10) ? '0' : ''}${seconds}`;
-        $ ('#nextTimer')[0].innerHTML = str;
+        for (const el of $ ('.nextTimer')) {
+            el.innerHTML = str;
+        }
     }
 
     Vue.component('game-item', {
@@ -53,7 +55,8 @@ $ (document).ready(function() {
                     {{game.desc}}
                 </p>
             </div>
-            <a href="" class="download-button" target="_blank"><img src="img/icon/download.png">Download</a>
+            <a v-if="game.link != ''" :href="game.link" class="download-button" target="_blank"><img src="img/icon/download.png">Download</a>
+            <div v-else href="" class="download-button countdown nextTimer" target="_blank">0:00:00</div>
         </div>
         `
     });
@@ -99,8 +102,20 @@ $ (document).ready(function() {
                     tags: [{id: 1, tag: 'Needle', class: 'needle'}],
                     maker: 'Game maker',
                     desc: 'Game description',
-                    img: 'img/game/01.png'
+                    img: 'img/game/preview.png',
+                    link: 'https://www.google.com/'
                 }*/
+            ],
+            previewList: [
+                {
+                    id: 1,
+                    title: '???',
+                    tags: [],
+                    maker: '???',
+                    desc: '',
+                    img: 'img/game/preview.png',
+                    link: ''
+                }
             ],
             makerList: [
                 {
@@ -147,7 +162,7 @@ $ (document).ready(function() {
                 },
                 {
                     id: 3,
-                    name: 'Arzztt',
+                    name: 'arzztt',
                     img: 'img/maker/arzztt.jpg',
                     links: [{id: 1, link: 'https://twitter.com/arzztt365/', img: 'img/icon/twitter.png'}]
                 },
@@ -225,7 +240,7 @@ $ (document).ready(function() {
                 },
                 {
                     id: 7,
-                    name: 'Lilly',
+                    name: 'lilly',
                     img: 'img/maker/lilly.jpg',
                     links: [{id: 1, link: 'https://twitter.com/TomorrowSuicide', img: 'img/icon/twitter.png'}]
                 },
@@ -247,7 +262,7 @@ $ (document).ready(function() {
                 },
                 {
                     id: 10,
-                    name: 'Kurath',
+                    name: 'kurath',
                     img: 'img/maker/kurath.png',
                     links: []
                 },
@@ -265,19 +280,19 @@ $ (document).ready(function() {
                 },
                 {
                     id: 24,
-                    name: 'Poi Moi',
+                    name: 'PoiMoi',
                     img: 'img/maker/poi.png',
                     links: []
                 },
                 {
                     id: 12,
-                    name: 'Popop614',
+                    name: 'popop614',
                     img: 'img/maker/popop.png',
                     links: [{id: 1, link: 'https://twitter.com/popop6143', img: 'img/icon/twitter.png'}]
                 },
                 {
                     id: 38,
-                    name: 'princeoflight',
+                    name: 'Princeoflight',
                     img: 'img/maker/princeoflight.png',
                     links: [{id: 1, link: 'https://twitter.com/PrinceoflightA', img: 'img/icon/twitter.png'}]
                 },
@@ -365,7 +380,7 @@ $ (document).ready(function() {
                 },
                 {
                     id: 22,
-                    name: 'Wonderful',
+                    name: 'wonderful',
                     img: 'img/maker/wonderful.jpg',
                     links: [{id: 1, link: 'https://twitter.com/wonderfulx_x', img: 'img/icon/twitter.png'}]
                 },
@@ -375,6 +390,14 @@ $ (document).ready(function() {
                     img: 'img/maker/ybma.png',
                     links: [{id: 1, link: 'https://twitter.com/YaBoiMarcAnton1', img: 'img/icon/twitter.png'}]
                 }
+            ],
+            alex: [
+                {
+                    id: 1,
+                    name: 'Tralexium',
+                    img: 'img/maker/tralexium.jpg',
+                    links: [{id: 1, link: 'https://twitter.com/Tralexium', img: 'img/icon/twitter.png'}]
+                }   
             ]
         }
     });
