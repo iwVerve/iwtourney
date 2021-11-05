@@ -296,8 +296,8 @@ h6 {
 }
 
 .button {
-    width: 10rem;
-    padding: 0.75rem;
+    width: 10em;
+    padding: 0.75em;
 
     background-color: var(--download-color);
     text-align: center;
