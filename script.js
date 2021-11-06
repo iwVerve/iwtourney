@@ -14,7 +14,7 @@ clickTab = function(id) {
 }
 
 $ (document).ready(function() {
-    tabCurrent = 'games';
+    tabCurrent = 'about';
 
     switching = false;
 
@@ -422,6 +422,7 @@ $ (document).ready(function() {
         }
     });
 
-    clickTab("about");
+    //clickTab("about");
+    $("#about").fadeIn(0);
     setInterval(updateTimer, 200);
 });
