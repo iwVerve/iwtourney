@@ -20,7 +20,7 @@ $ (document).ready(function() {
 
     const nextGame = new Date('2021-11-13T12:00:00-05:00').getTime();
     function updateTimer() {
-        var t = nextGame - Date.now();
+        var t = Math.max(nextGame - Date.now(), 0);
         var days = Math.floor(t / (24*60*60*1000));
         var hours = Math.floor((t % (24*60*60*1000)) / (60*60*1000));
         var minutes = Math.floor((t % (60*60*1000)) / (60*1000));
