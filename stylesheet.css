@@ -25,6 +25,9 @@ body {
     body {
         font-size: 24px;
     }
+    .maker {
+        font-size: 16px;
+    }
 }
 
 .title {

@@ -193,6 +193,12 @@ $ (document).ready(function() {
                     links: [{id: 1, link: 'https://twitter.com/TheChrisay', img: 'img/icon/twitter.png'}]
                 },
                 {
+                    id: 45,
+                    name: 'Cthaere',
+                    img: 'img/maker/cthaere.png',
+                    links: []
+                },
+                {
                     id: 4,
                     name: 'Dono',
                     img: 'img/maker/dono.jpg',
