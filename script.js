@@ -51,7 +51,7 @@ $ (document).ready(function() {
                 <p class="game-makers">
                     {{game.maker}}
                 </p>
-                <p class="game-description">
+                <p class="game-description" style="text-align: center">
                     {{game.desc}}
                 </p>
             </div>
@@ -96,15 +96,24 @@ $ (document).ready(function() {
         el: '#app',
         data: {
             currentList: [
-                /*{
+                {
                     id: 1,
-                    title: '???',
-                    tags: [],
-                    maker: '???',
-                    desc: '',
-                    img: 'img/game/preview.png',
-                    link: ''
-                }*/
+                    title: 'I Wanna Power',
+                    tags: [{id: 1, tag: '▲45', class: 'difficulty'}, {id: 2, tag: 'Adventure', class: 'adventure'}],
+                    maker: 'wonderful',
+                    desc: 'Ranking critera: Fastest time',
+                    img: 'img/game/power.jpg',
+                    link: 'https://www.dropbox.com/s/73685ox5w1uc64w/I%20Wanna%20Power.zip?dl=0'
+                },
+                {
+                    id: 2,
+                    title: 'I Wanna Be Wacky',
+                    tags: [{id: 1, tag: '▲40', class: 'difficulty'}, {id: 2, tag: 'Luck', class: 'luck'}],
+                    maker: 'arzztt',
+                    desc: 'Ranking criteria: Fewest deaths',
+                    img: 'img/game/wacky.jpg',
+                    link: 'https://www.mediafire.com/file/cvfzdma7kfuo72r/I_Wanna_Be_Wacky.zip/file'
+                }
             ],
             gameList: [
                 /*{
@@ -113,30 +122,11 @@ $ (document).ready(function() {
                     tags: [{id: 1, tag: 'Needle', class: 'needle'}],
                     maker: 'Game maker',
                     desc: 'Game description',
-                    img: 'img/game/preview.png',
+                    img: 'img/game/preview.jpg',
                     link: 'https://www.google.com/'
                 }*/
             ],
-            previewList: [
-                {
-                    id: 1,
-                    title: '???',
-                    tags: [{id: 1, tag: '▲45', class: 'difficulty'}, {id: 2, tag: 'Adventure', class: 'adventure'}],
-                    maker: 'wonderful',
-                    desc: '',
-                    img: 'img/game/preview.png',
-                    link: ''
-                },
-                {
-                    id: 2,
-                    title: '???',
-                    tags: [{id: 1, tag: '▲40', class: 'difficulty'}, {id: 2, tag: 'Luck', class: 'luck'}],
-                    maker: 'arzztt',
-                    desc: '',
-                    img: 'img/game/preview.png',
-                    link: ''
-                }
-            ],
+            previewList: [],
             makerList: [
                 {
                     id: 25,
