@@ -92,54 +92,53 @@ $ (document).ready(function() {
         `
     });
 
+    games = {
+        power: {
+            title: 'I Wanna Power',
+            tags: [{tag: '▲45', class: 'difficulty'}, {tag: 'Adventure', class: 'adventure'}],
+            maker: 'wonderful',
+            desc: 'Ranking critera: Fastest time',
+            img: 'img/game/power.jpg',
+            link: 'https://www.dropbox.com/s/73685ox5w1uc64w/I%20Wanna%20Power.zip?dl=0'
+        },
+        wacky: {
+            title: 'I Wanna Be Wacky',
+            tags: [{tag: '▲40', class: 'difficulty'}, {tag: 'Luck', class: 'luck'}],
+            maker: 'arzztt',
+            desc: 'Ranking criteria: Fewest deaths',
+            img: 'img/game/wacky.jpg',
+            link: 'https://www.mediafire.com/file/cvfzdma7kfuo72r/I_Wanna_Be_Wacky.zip/file'
+        },
+        preview1: {
+            title: '???',
+            tags: [{tag: '▲65', class: 'difficulty'}, {tag: 'Needle', class: 'needle'}],
+            maker: '128-Up',
+            desc: '',
+            img: 'img/game/preview.jpg',
+            link: ''
+        },
+        preview2: {
+            title: '???',
+            tags: [{tag: '▲50', class: 'difficulty'}, {tag: 'Avoidance', class: 'avoidance'}],
+            maker: 'RandomChaos_',
+            desc: '🤠',
+            img: 'img/game/preview.jpg',
+            link: ''
+        }
+    }
+
     var app = new Vue({
         el: '#app',
         data: {
             currentList: [
-                {
-                    title: 'I Wanna Power',
-                    tags: [{tag: '▲45', class: 'difficulty'}, {tag: 'Adventure', class: 'adventure'}],
-                    maker: 'wonderful',
-                    desc: 'Ranking critera: Fastest time',
-                    img: 'img/game/power.jpg',
-                    link: 'https://www.dropbox.com/s/73685ox5w1uc64w/I%20Wanna%20Power.zip?dl=0'
-                },
-                {
-                    title: 'I Wanna Be Wacky',
-                    tags: [{tag: '▲40', class: 'difficulty'}, {tag: 'Luck', class: 'luck'}],
-                    maker: 'arzztt',
-                    desc: 'Ranking criteria: Fewest deaths',
-                    img: 'img/game/wacky.jpg',
-                    link: 'https://www.mediafire.com/file/cvfzdma7kfuo72r/I_Wanna_Be_Wacky.zip/file'
-                }
+                games.power,
+                games.wacky
             ],
             gameList: [
-                /*{
-                    title: 'Game title',
-                    tags: [{tag: 'Needle', class: 'needle'}],
-                    maker: 'Game maker',
-                    desc: 'Game description',
-                    img: 'img/game/preview.jpg',
-                    link: 'https://www.google.com/'
-                }*/
             ],
             previewList: [
-                {
-                    title: '???',
-                    tags: [{tag: '▲65', class: 'difficulty'}, {tag: 'Needle', class: 'needle'}],
-                    maker: '128-Up',
-                    desc: '',
-                    img: 'img/game/preview.jpg',
-                    link: ''
-                },
-                {
-                    title: '???',
-                    tags: [{tag: '▲50', class: 'difficulty'}, {tag: 'Avoidance', class: 'avoidance'}],
-                    maker: 'RandomChaos_',
-                    desc: '🤠',
-                    img: 'img/game/preview.jpg',
-                    link: ''
-                }
+                games.preview1,
+                games.preview2
             ],
             makerList: [
                 {
