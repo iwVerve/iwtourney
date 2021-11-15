@@ -18,7 +18,7 @@ $ (document).ready(function() {
 
     switching = false;
 
-    const nextGame = new Date('2021-11-13T12:00:00-05:00').getTime();
+    const nextGame = new Date('2021-11-20T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = Math.max(nextGame - Date.now(), 0);
         var days = Math.floor(t / (24*60*60*1000));
@@ -97,18 +97,16 @@ $ (document).ready(function() {
         data: {
             currentList: [
                 {
-                    id: 1,
                     title: 'I Wanna Power',
-                    tags: [{id: 1, tag: '▲45', class: 'difficulty'}, {id: 2, tag: 'Adventure', class: 'adventure'}],
+                    tags: [{tag: '▲45', class: 'difficulty'}, {tag: 'Adventure', class: 'adventure'}],
                     maker: 'wonderful',
                     desc: 'Ranking critera: Fastest time',
                     img: 'img/game/power.jpg',
                     link: 'https://www.dropbox.com/s/73685ox5w1uc64w/I%20Wanna%20Power.zip?dl=0'
                 },
                 {
-                    id: 2,
                     title: 'I Wanna Be Wacky',
-                    tags: [{id: 1, tag: '▲40', class: 'difficulty'}, {id: 2, tag: 'Luck', class: 'luck'}],
+                    tags: [{tag: '▲40', class: 'difficulty'}, {tag: 'Luck', class: 'luck'}],
                     maker: 'arzztt',
                     desc: 'Ranking criteria: Fewest deaths',
                     img: 'img/game/wacky.jpg',
@@ -117,302 +115,272 @@ $ (document).ready(function() {
             ],
             gameList: [
                 /*{
-                    id: 1,
                     title: 'Game title',
-                    tags: [{id: 1, tag: 'Needle', class: 'needle'}],
+                    tags: [{tag: 'Needle', class: 'needle'}],
                     maker: 'Game maker',
                     desc: 'Game description',
                     img: 'img/game/preview.jpg',
                     link: 'https://www.google.com/'
                 }*/
             ],
-            previewList: [],
+            previewList: [
+                {
+                    title: '???',
+                    tags: [{tag: '▲65', class: 'difficulty'}, {tag: 'Needle', class: 'needle'}],
+                    maker: '128-Up',
+                    desc: '',
+                    img: 'img/game/preview.jpg',
+                    link: ''
+                },
+                {
+                    title: '???',
+                    tags: [{tag: '▲50', class: 'difficulty'}, {tag: 'Avoidance', class: 'avoidance'}],
+                    maker: 'RandomChaos_',
+                    desc: '🤠',
+                    img: 'img/game/preview.jpg',
+                    link: ''
+                }
+            ],
             makerList: [
                 {
-                    id: 25,
                     name: '29th letter',
                     img: 'img/maker/29.png',
                     links: []
                 },
                 {
-                    id: 1,
                     name: '128-Up',
                     img: 'img/maker/128-up.png',
-                    links: [{id: 1, link: 'https://twitter.com/SpikyShroom', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/SpikyShroom', img: 'img/icon/twitter.png'}]
                 },
                 {
-                    id: 26,
                     name: 'AGuyNamedTyler',
                     img: 'img/maker/tyler.png',
                     links: []
                 },
                 {
-                    id: 39,
                     name: 'AlejoFangamer',
                     img: 'img/maker/alejo.jpg',
-                    links: [{id: 1, link: 'https://twitter.com/AlejoFangamer', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/AlejoFangamer', img: 'img/icon/twitter.png'}]
                 },
                 {
-                    id: 2,
                     name: 'anxKha',
                     img: 'img/maker/anxkha.png',
                     links: []
                 },
                 {
-                    id: 27,
                     name: 'Aroxon',
                     img: 'img/maker/aroxon.jpg',
-                    links: [{id: 1, link: 'https://twitter.com/Aroxon2', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/Aroxon2', img: 'img/icon/twitter.png'}]
                 },
                 {
-                    id: 37,
                     name: 'Artimax',
                     img: 'img/maker/artimax.png',
                     links: []
                 },
                 {
-                    id: 3,
                     name: 'arzztt',
                     img: 'img/maker/arzztt.jpg',
-                    links: [{id: 1, link: 'https://twitter.com/arzztt365/', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/arzztt365/', img: 'img/icon/twitter.png'}]
                 },
                 {
-                    id: 42,
                     name: 'Chrisay',
                     img: 'img/maker/chrisay.png',
-                    links: [{id: 1, link: 'https://twitter.com/TheChrisay', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/TheChrisay', img: 'img/icon/twitter.png'}]
                 },
                 {
-                    id: 45,
                     name: 'Cthaere',
                     img: 'img/maker/cthaere.png',
                     links: []
                 },
                 {
-                    id: 4,
                     name: 'Dono',
                     img: 'img/maker/dono.jpg',
                     links: []
                 },
                 {
-                    id: 41,
                     name: 'Duncan',
                     img: 'img/maker/duncan.png',
-                    links: [{id: 1, link: 'https://twitter.com/duncanacnud', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/duncanacnud', img: 'img/icon/twitter.png'}]
                 },
                 {
-                    id: 5,
                     name: 'EchoMask',
                     img: 'img/maker/echomask.jpg',
-                    links: [{id: 1, link: 'https://twitter.com/ArthurTheGuy', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/ArthurTheGuy', img: 'img/icon/twitter.png'}]
                 },
                 {
-                    id: 28,
                     name: 'FairLight',
                     img: 'img/maker/fairlight.png',
                     links: []
                 },
                 {
-                    id: 29,
                     name: 'FancyFishie',
                     img: 'img/maker/fancy.webp',
                     links: []
                 },
                 {
-                    id: 30,
                     name: 'happy',
                     img: 'img/maker/happy.webp',
                     links: []
                 },
                 {
-                    id: 6,
                     name: 'IanBoy141',
                     img: 'img/maker/ianboy.jpg',
-                    links: [{id: 1, link: 'https://twitter.com/IanBoy141', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/IanBoy141', img: 'img/icon/twitter.png'}]
                 },
                 {
-                    id: 31,
                     name: 'Jopagu',
                     img: 'img/maker/jopagu.png',
                     links: []
                 },
                 {
-                    id: 43,
                     name: 'Kai',
                     img: 'img/maker/kai.jpg',
-                    links: [{id: 1, link: 'https://twitter.com/kai_2007__', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/kai_2007__', img: 'img/icon/twitter.png'}]
                 },
                 {
-                    id: 32,
                     name: 'Kiiview',
                     img: 'img/maker/kiiview.jpg',
-                    links: [{id: 1, link: 'https://twitter.com/Kiiview1', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/Kiiview1', img: 'img/icon/twitter.png'}]
                 },
                 {
-                    id: 33,
                     name: 'Kizelf',
                     img: 'img/maker/kizelf.webp',
                     links: []
                 },
                 {
-                    id: 7,
                     name: 'lilly',
                     img: 'img/maker/lilly.jpg',
-                    links: [{id: 1, link: 'https://twitter.com/TomorrowSuicide', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/TomorrowSuicide', img: 'img/icon/twitter.png'}]
                 },
                 {
-                    id: 8,
                     name: 'JoshuaHB',
                     img: 'img/maker/joshua.jpg',
-                    links: [{id: 1, link: 'https://twitter.com/joshhoffboring', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/joshhoffboring', img: 'img/icon/twitter.png'}]
                 },
                 {
-                    id: 9,
                     name: 'Juan285',
                     img: 'img/maker/juan.jpg',
                     links: [
-                        {id: 1, link: 'https://twitter.com/slut285', img: 'img/icon/twitter.png'},
-                        {id: 2, link: 'https://juan285.carrd.co', img: 'img/icon/carrd.png'},
-                        {id: 3, link: 'https://juan285.blogspot.com', img: 'img/icon/page.png'}
+                        {link: 'https://twitter.com/slut285', img: 'img/icon/twitter.png'},
+                        {link: 'https://juan285.carrd.co', img: 'img/icon/carrd.png'},
+                        {link: 'https://juan285.blogspot.com', img: 'img/icon/page.png'}
                     ]
                 },
                 {
-                    id: 10,
                     name: 'kurath',
                     img: 'img/maker/kurath.png',
                     links: []
                 },
                 {
-                    id: 11,
                     name: 'p00ks',
                     img: 'img/maker/p00ks.png',
-                    links: [{id: 1, link: 'https://twitter.com/p00ks1', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/p00ks1', img: 'img/icon/twitter.png'}]
                 },
                 {
-                    id: 34,
                     name: 'PlayerDash2017',
                     img: 'img/maker/playerdash.webp',
                     links: []
                 },
                 {
-                    id: 24,
                     name: 'PoiMoi',
                     img: 'img/maker/poi.png',
                     links: []
                 },
                 {
-                    id: 12,
                     name: 'popop614',
                     img: 'img/maker/popop.png',
-                    links: [{id: 1, link: 'https://twitter.com/popop6143', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/popop6143', img: 'img/icon/twitter.png'}]
                 },
                 {
-                    id: 38,
                     name: 'Princeoflight',
                     img: 'img/maker/princeoflight.png',
-                    links: [{id: 1, link: 'https://twitter.com/PrinceoflightA', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/PrinceoflightA', img: 'img/icon/twitter.png'}]
                 },
                 {
-                    id: 13,
                     name: 'RandomChaos_',
                     img: 'img/maker/randomchaos.png',
                     links: []
                 },
                 {
-                    id: 14,
                     name: 'RandomErik',
                     img: 'img/maker/erik.jpg',
-                    links: [{id: 1, link: 'https://twitter.com/RandomErik2', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/RandomErik2', img: 'img/icon/twitter.png'}]
                 },
                 {
-                    id: 15,
                     name: 'Razzor',
                     img: 'img/maker/razzor.jpg',
-                    links: [{id: 1, link: 'https://twitter.com/IwRazzor', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/IwRazzor', img: 'img/icon/twitter.png'}]
                 },
                 {
-                    id: 35,
                     name: 'R3Ked',
                     img: 'img/maker/r3ked.webp',
                     links: []
                 },
                 {
-                    id: 16,
                     name: 'renex',
                     img: 'img/maker/renex.png',
-                    links: [{id: 1, link: 'https://twitter.com/renex_64', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/renex_64', img: 'img/icon/twitter.png'}]
                 },
                 {
-                    id: 17,
                     name: 'Rossiter',
                     img: 'img/maker/rossiter.png',
-                    links: [{id: 1, link: 'https://twitter.com/RossiterDev', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/RossiterDev', img: 'img/icon/twitter.png'}]
                 },
                 {
-                    id: 18,
                     name: 'shign',
                     img: 'img/maker/shign.png',
                     links: []
                 },
                 {
-                    id: 19,
                     name: 'Skulldude',
                     img: 'img/maker/skull.png',
-                    links: [{id: 1, link: 'https://twitter.com/Skulldude89', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/Skulldude89', img: 'img/icon/twitter.png'}]
                 },
                 {
-                    id: 40,
                     name: 'Smartkin',
                     img: 'img/maker/smartkin.png',
-                    links: [{id: 1, link: 'https://twitter.com/SmartkinZ', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/SmartkinZ', img: 'img/icon/twitter.png'}]
                 },
                 {
-                    id: 20,
                     name: 'Synthasmagoria',
                     img: 'img/maker/synth.png',
                     links: [
-                        {id: 1, link: 'https://twitter.com/SynthasA', img: 'img/icon/twitter.png'},
-                        {id: 2, link: 'https://synthasmagoria.neocities.org/', img: 'img/icon/page.png'},
-                        {id: 3, link: 'https://synthasmagoria.itch.io/', img: 'img/icon/itch.png'}
+                        {link: 'https://twitter.com/SynthasA', img: 'img/icon/twitter.png'},
+                        {link: 'https://synthasmagoria.neocities.org/', img: 'img/icon/page.png'},
+                        {link: 'https://synthasmagoria.itch.io/', img: 'img/icon/itch.png'}
                     ]
                 },
                 {
-                    id: 36,
                     name: 'Tayashie',
                     img: 'img/maker/tayashie.png',
                     links: []
                 },
                 {
-                    id: 44,
                     name: 'Verve',
                     img: 'img/maker/verve.png',
-                    links: [{id: 1, link: 'https://twitter.com/IwVerve', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/IwVerve', img: 'img/icon/twitter.png'}]
                 },
                 {
-                    id: 21,
                     name: 'very cool',
                     img: 'img/maker/very.jpg',
-                    links: [{id: 1, link: 'https://twitter.com/verycool_____/photo', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/verycool_____/photo', img: 'img/icon/twitter.png'}]
                 },
                 {
-                    id: 22,
                     name: 'wonderful',
                     img: 'img/maker/wonderful.jpg',
-                    links: [{id: 1, link: 'https://twitter.com/wonderfulx_x', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/wonderfulx_x', img: 'img/icon/twitter.png'}]
                 },
                 {
-                    id: 23,
                     name: 'YaBoiMarcAntony',
                     img: 'img/maker/ybma.png',
-                    links: [{id: 1, link: 'https://twitter.com/YaBoiMarcAnton1', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/YaBoiMarcAnton1', img: 'img/icon/twitter.png'}]
                 }
             ],
             alex: [
                 {
-                    id: 1,
                     name: 'Tralexium',
                     img: 'img/maker/tralexium.jpg',
-                    links: [{id: 1, link: 'https://twitter.com/Tralexium', img: 'img/icon/twitter.png'}]
+                    links: [{link: 'https://twitter.com/Tralexium', img: 'img/icon/twitter.png'}]
                 }   
             ]
         }

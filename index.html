@@ -65,6 +65,7 @@
                         <h1>Games</h1>
 
                         <div class="game-container">
+
                             <h3>Current Games</h3>
                             <p style="text-align: center;">Submit your times until Thursday at 12PM EST.</p>
                             <game-item
@@ -72,20 +73,23 @@
                                 v-bind:game="item"
                                 v-bind:key="item.id"
                             ></game-item>
-                            <p style="text-align: center;">Next week's previews will usually be posted on Monday!</p>
-                            <!--<h3>Next week's games</h3>
+                            <!--<p style="text-align: center;">Next week's previews will usually be posted on Monday!</p>-->
+
+                            <h3>Next week's games</h3>
                             <p style="text-align: center;">New games release every Saturday at 12PM EST.</p>
                             <game-item
                                 v-for="item in previewList"
                                 v-bind:game="item"
                                 v-bind:key="item.id"
-                            ></game-item>-->
+                            ></game-item>
+
                             <!--<h3>Past Games</h3>
                             <game-item
                                 v-for="item in gameList"
                                 v-bind:game="item"
                                 v-bind:key="item.id"
                             ></game-item>-->
+
                         </div>
                     </div>
 
@@ -114,5 +118,5 @@
         
     </body>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=1"></script>
 </html>
