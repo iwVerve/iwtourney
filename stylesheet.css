@@ -226,6 +226,8 @@ h6 {
     align-items: center;
     justify-content: center;
     flex-flow: column;
+
+    counter-reset: leaderboard-order;
 }
 
 .leaderboard-hide {
@@ -233,16 +235,22 @@ h6 {
 }
 
 .leaderboard-entry {
-    margin: 0.5rem;
-    min-width: 12rem;
+    margin: 0.4em;
+    min-width: 20em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
+
 
 .leaderboard-name {
     font-weight: bold;
+}
+
+.leaderboard-name::before {
+    counter-increment: leaderboard-order;
+    content: counter(leaderboard-order) ".";
 }
 
 .leaderboard-score {
