@@ -409,6 +409,11 @@ $ (document).ready(function() {
                     links: [{link: 'https://twitter.com/wonderfulx_x', img: 'img/icon/twitter.png'}]
                 },
                 {
+                    name: 'xoro1',
+                    img: 'img/maker/xoro.jpg',
+                    links: [{link: 'https://twitter.com/iwxoro', img: 'img/icon/twitter.png'}]
+                },
+                {
                     name: 'YaBoiMarcAntony',
                     img: 'img/maker/ybma.png',
                     links: [{link: 'https://twitter.com/YaBoiMarcAnton1', img: 'img/icon/twitter.png'}]
