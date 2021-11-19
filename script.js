@@ -13,6 +13,18 @@ clickTab = function(id) {
     }
 }
 
+showhideLeaderboard = function(el) {
+    var b = el.parentElement.parentElement.parentElement.children[1];
+    if (b.classList.contains('leaderboard-hide')) {
+        b.classList.remove('leaderboard-hide');
+        el.innerHTML = '<img src="img/icon/close.png">';
+    }
+    else {
+        b.classList.add('leaderboard-hide');
+        el.innerHTML = '<img src="img/icon/open.png">';
+    }
+}
+
 $ (document).ready(function() {
     tabCurrent = 'about';
 
@@ -35,28 +47,51 @@ $ (document).ready(function() {
     Vue.component('game-item', {
         props: ['game'],
         template: `
-        <div class="game">
-            <img :src="game.img" class="game-thumbnail">
-            <div class="game-info-container">
-                <div class="game-title-tags">
-                    <span class="game-title">
-                        {{game.title}}
-                    </span> 
-                    <game-tag
-                        v-for="tag in game.tags"
-                        v-bind:tag="tag"
-                        v-bind:key="tag.id"
-                    ></game-tag>
+        <div class="game-leaderboard">
+            <div class="game">
+                <img :src="game.img" class="game-thumbnail">
+                <div class="game-info-container">
+                    <div class="game-title-tags">
+                        <span class="game-title">
+                            {{game.title}}
+                        </span> 
+                        <game-tag
+                            v-for="tag in game.tags"
+                            v-bind:tag="tag"
+                            v-bind:key="tag.id"
+                        ></game-tag>
+                    </div>
+                    <p class="game-makers">
+                        {{game.maker}}
+                    </p>
+                    <p class="game-description" style="text-align: center">
+                        {{game.desc}}
+                    </p>
                 </div>
-                <p class="game-makers">
-                    {{game.maker}}
-                </p>
-                <p class="game-description" style="text-align: center">
-                    {{game.desc}}
-                </p>
+                <div class="game-right-bar">
+                    <a v-if="game.link != ''" :href="game.link" class="download-button" target="_blank"><img src="img/icon/download.png">Download</a>
+                    <div v-else href="" class="download-button countdown nextTimer" target="_blank">0:00:00</div>
+                    <button class="leaderboard-button" v-if="game.ranking.length != 0" onclick="showhideLeaderboard(this)"> <img src="img/icon/open.png"> </button>
+                </div>
             </div>
-            <a v-if="game.link != ''" :href="game.link" class="download-button" target="_blank"><img src="img/icon/download.png">Download</a>
-            <div v-else href="" class="download-button countdown nextTimer" target="_blank">0:00:00</div>
+            <div class="leaderboard leaderboard-hide">
+                <leaderboard-entry
+                    v-for="entry in game.ranking"
+                    v-bind:entry="entry"
+                    v-bind:key="entry.id"
+                ></leaderboard-entry>
+            </div>
+        </div>
+        `
+    });
+
+    Vue.component('leaderboard-entry', {
+        props: ['entry'],
+        template: `
+        <div class="leaderboard-entry">
+            <span class="leaderboard-name">{{entry.name}}</span>
+            <a class="leaderboard-score" v-if="entry.link != ''" :href="entry.link" target="_blank">{{entry.score}}</a>
+            <span class="leaderboard-score" v-else :href="entry.link">{{entry.score}}</span>
         </div>
         `
     });
@@ -99,7 +134,8 @@ $ (document).ready(function() {
             maker: 'wonderful',
             desc: 'Ranking critera: Fastest time',
             img: 'img/game/power.jpg',
-            link: 'https://www.dropbox.com/s/73685ox5w1uc64w/I%20Wanna%20Power.zip?dl=0'
+            link: 'https://www.dropbox.com/s/73685ox5w1uc64w/I%20Wanna%20Power.zip?dl=0',
+            ranking: []
         },
         wacky: {
             title: 'I Wanna Be Wacky',
@@ -107,7 +143,8 @@ $ (document).ready(function() {
             maker: 'arzztt',
             desc: 'Ranking criteria: Fewest deaths',
             img: 'img/game/wacky.jpg',
-            link: 'https://www.mediafire.com/file/cvfzdma7kfuo72r/I_Wanna_Be_Wacky.zip/file'
+            link: 'https://www.mediafire.com/file/cvfzdma7kfuo72r/I_Wanna_Be_Wacky.zip/file',
+            ranking: []
         },
         preview1: {
             title: '???',
@@ -115,7 +152,8 @@ $ (document).ready(function() {
             maker: '128-Up',
             desc: '',
             img: 'img/game/preview.jpg',
-            link: ''
+            link: '',
+            ranking: []
         },
         preview2: {
             title: '???',
@@ -123,7 +161,8 @@ $ (document).ready(function() {
             maker: 'RandomChaos_',
             desc: '🤠',
             img: 'img/game/preview.jpg',
-            link: ''
+            link: '',
+            ranking: []
         }
     }
 

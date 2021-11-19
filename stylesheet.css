@@ -6,6 +6,7 @@
     --button-underline-color: hsla(30, 100%, 60%, 1);
     
     --game-color: hsla(0, 0%, 90%, 1);
+    --leaderboard-color: hsla(0, 0%, 85%, 1);
     --download-color: hsla(0, 0%, 85%, 1);
     --download-color-highlight: hsla(0, 0%, 75%, 1);
 
@@ -118,9 +119,18 @@ h6 {
     flex-flow: column nowrap;
 }
 
-.game {
+.game-leaderboard {
     margin: 0.6em calc(25% - 6.25em);
+
+    background-color: var(--leaderboard-color);
+    border-radius: var(--border-radius);
+}
+
+.game {
     padding: 0.75em;
+    margin: 0;
+
+    position: relative;
 
     border-radius: var(--border-radius);
     background-color: var(--game-color);
@@ -204,13 +214,71 @@ h6 {
     min-height: 1.5rem;
 }
 
+.game-right-bar {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+}
+
+.leaderboard {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.leaderboard-hide {
+    display: none;
+}
+
+.leaderboard-entry {
+    margin: 0.5rem;
+    min-width: 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.leaderboard-name {
+    font-weight: bold;
+}
+
+.leaderboard-score {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.leaderboard-button {
+    margin: 0.5rem 0 0 0;
+    width: calc(2.5 * var(--border-radius));
+    height: calc(2.5 * var(--border-radius));
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--download-color);
+    outline: none;
+    border: none;
+    transition: var(--button-transition);
+    cursor: pointer;
+}
+
+.leaderboard-button:hover {
+    background-color: var(--download-color-highlight);
+}
+
 @media (max-width: 1280px) {
     .about {
         padding: 0;
     }
+    .game-leaderboard {
+        margin: 0.6rem 0.6rem;
+    }
     .game {
         flex-direction: column;
-        margin: 0.6rem 0.6rem;
     }
     .game-info-container {
         margin: 0.6rem 0;
