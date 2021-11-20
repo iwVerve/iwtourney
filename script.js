@@ -138,9 +138,9 @@ $ (document).ready(function() {
             ranking: [
                 {name: 'Cosmoing#9001', score: '0:42:56', link: 'https://youtu.be/AiEL4IDIU5M'},
                 {name: 'bummerman222#8700', score: '0:49:33', link: 'https://www.youtube.com/watch?v=9D6qNZT9IkM'},
+                {name: 'JPRG666#4320', score: '0:50:16', link: 'https://youtu.be/BuGkvrzJrls'},
+                {name: 'Natsu#5688', score: '0:52:40', link: 'https://youtu.be/6G27yZLIrls'},
                 {name: 'Wolsk#1111', score: '0:53:19', link: 'https://www.youtube.com/watch?v=x2pLgalrCIw'},
-                {name: 'JPRG666#4320', score: '0:50:16', link: ''},
-                {name: 'Natsu#5688', score: '0:52:40', link: ''},
                 {name: 'Verve#4008', score: '0:54:01', link: ''},
                 {name: 'chrisg#0492', score: '0:54:57', link: 'https://drive.google.com/drive/folders/1CMLtwzzimt3sNDsumNIqFDBGSjmDVUqb?usp=sharing'},
                 {name: 'MirFälltKeinNameEin#4945', score: '0:55:01', link: 'https://www.twitch.tv/videos/1206104474'},
