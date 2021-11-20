@@ -31,6 +31,7 @@ $ (document).ready(function() {
     switching = false;
 
     const nextGame = new Date('2021-11-20T12:00:00-05:00').getTime();
+    const submitEnd = new Date('2021-11-25T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = Math.max(nextGame - Date.now(), 0);
         var days = Math.floor(t / (24*60*60*1000));
@@ -40,6 +41,17 @@ $ (document).ready(function() {
         var seconds = Math.floor((t % (60*1000)) / (1000));
         var str = `${days}:${(hours < 10) ? '0' : ''}${hours}:${(minutes < 10) ? '0' : ''}${minutes}:${(seconds < 10) ? '0' : ''}${seconds}`;
         for (const el of $ ('.nextTimer')) {
+            el.innerHTML = str;
+        }
+
+        t = Math.max(submitEnd - Date.now(), 0);
+        days = Math.floor(t / (24*60*60*1000));
+        hours = Math.floor((t % (24*60*60*1000)) / (60*60*1000));
+        minutes = Math.floor((t % (60*60*1000)) / (60*1000));
+
+        seconds = Math.floor((t % (60*1000)) / (1000));
+        str = `${days}:${(hours < 10) ? '0' : ''}${hours}:${(minutes < 10) ? '0' : ''}${minutes}:${(seconds < 10) ? '0' : ''}${seconds}`;
+        for (const el of $ ('#submitTimer')) {
             el.innerHTML = str;
         }
     }
@@ -326,22 +338,22 @@ $ (document).ready(function() {
                 {name: 'sun5#4524', score: '10640.8', link: 'https://www.youtube.com/watch?v=kTB44W_W_Ww'}
             ]
         },
-        preview1: {
-            title: '???',
+        seventwofour: {
+            title: 'I Wanna be the 724-ish',
             tags: [{tag: '▲65', class: 'difficulty'}, {tag: 'Needle', class: 'needle'}],
             maker: '128-Up',
-            desc: '',
-            img: 'img/game/preview.jpg',
-            link: '',
+            desc: 'Ranking critera: Fastest time',
+            img: 'img/game/724.jpg',
+            link: 'https://www.mediafire.com/file/fvo2m4s62q8ocfk/I_Wanna_be_the_724-ish_v1.00.zip/file',
             ranking: []
         },
-        preview2: {
-            title: '???',
+        steeledge: {
+            title: 'I Wanna Steel Edge',
             tags: [{tag: '▲50', class: 'difficulty'}, {tag: 'Avoidance', class: 'avoidance'}],
             maker: 'RandomChaos_',
-            desc: '🤠',
-            img: 'img/game/preview.jpg',
-            link: '',
+            desc: 'Ranking critera: Fastest time 🤠',
+            img: 'img/game/steeledge.jpg',
+            link: 'https://www.mediafire.com/file/eidtjanj5kvngru/I_Wanna_Steel_Edge.zip/file',
             ranking: []
         }
     }
@@ -350,14 +362,14 @@ $ (document).ready(function() {
         el: '#app',
         data: {
             currentList: [
+                games.seventwofour,
+                games.steeledge
+            ],
+            gameList: [
                 games.power,
                 games.wacky
             ],
-            gameList: [
-            ],
             previewList: [
-                games.preview1,
-                games.preview2
             ],
             makerList: [
                 {
