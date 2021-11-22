@@ -30,7 +30,7 @@ $ (document).ready(function() {
 
     switching = false;
 
-    const nextGame = new Date('2021-11-20T12:00:00-05:00').getTime();
+    const nextGame = new Date('2021-11-27T12:00:00-05:00').getTime();
     const submitEnd = new Date('2021-11-25T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = Math.max(nextGame - Date.now(), 0);
@@ -173,7 +173,7 @@ $ (document).ready(function() {
                 {name: 'Jety#8150', score: '1:05:18', link: 'https://www.youtube.com/watch?v=vk6rTJqJ6yg'},
                 {name: 'Schulzer#5885', score: '1:07:49', link: ''},
                 {name: 'Naloa#2570', score: '1:09:38', link: 'https://www.youtube.com/watch?v=omHyBZUI1Jg'},
-                {name: 'Nick24#2510', score: '1:10:03', link: 'https://www.twitch.tv/videos/1206040786'},
+                //{name: 'Nick24#2510', score: '1:10:03', link: 'https://www.twitch.tv/videos/1206040786'},
                 {name: 'どるっぴ#4013', score: '1:10:53', link: 'https://www.youtube.com/watch?v=Bd7KnrC6HJI'},
                 {name: 'shign#4549', score: '1:11:03', link: 'https://www.youtube.com/watch?v=-IPPxVNC3e0'},
                 {name: 'Gaborro#1598', score: '1:14:23', link: 'https://www.twitch.tv/videos/1205688279?t=0h3m5s'},
@@ -215,7 +215,7 @@ $ (document).ready(function() {
                 {name: 'bantsmen#3247', score: '2:36:19', link: ''},
                 {name: 'Byron#6895', score: '2:38:03', link: ''},
                 {name: 'Havamati#1687', score: '2:46:33', link: ''},
-                {name: 'Person4566#9924', score: '2:59:31', link: ''},
+                //{name: 'Person4566#9924', score: '2:59:31', link: ''},
                 {name: 'EchoMask#8965', score: '3:02:06', link: 'https://www.twitch.tv/videos/1204485133'},
                 {name: 'Elmur#9293', score: '3:05:27', link: 'https://youtu.be/ea-lgWvmfkg https://youtu.be/QBOdFlLG3HY'},
                 {name: 'InF™| Yuuki#3998', score: '3:13:24', link: ''},
@@ -241,7 +241,7 @@ $ (document).ready(function() {
                 {name: 'LAWatson#4618', score: '988.2', link: 'https://www.youtube.com/watch?v=O9Zc1e9kwFk'},
                 {name: 'Jety#8150', score: '989', link: 'https://www.youtube.com/watch?v=80eP7Xs5Itc'},
                 {name: 'Stonk#3212', score: '997', link: 'https://www.twitch.tv/videos/1205786740'},
-                {name: 'Nick24#2510', score: '1032', link: 'https://www.twitch.tv/videos/1206040786'},
+                //{name: 'Nick24#2510', score: '1032', link: 'https://www.twitch.tv/videos/1206040786'},
                 {name: 'Mastermaxify#2893', score: '1053.8', link: 'https://www.twitch.tv/videos/1204622919'},
                 {name: 'Wolsk#1111', score: '1095', link: ''},
                 {name: 'bummerman222#8700', score: '1110.6', link: 'https://www.youtube.com/watch?v=EyjVpvELuUQ'},
@@ -355,6 +355,15 @@ $ (document).ready(function() {
             img: 'img/game/steeledge.jpg',
             link: 'https://www.mediafire.com/file/eidtjanj5kvngru/I_Wanna_Steel_Edge.zip/file',
             ranking: []
+        },
+        preview: {
+            title: '? ????? ???? ??? ????',
+            tags: [{tag: '▲53', class: 'difficulty'}, {tag: 'Adventure', class: 'adventure'}],
+            maker: 'Aarpsce',
+            desc: '',
+            img: 'img/game/preview.jpg',
+            link: '',
+            ranking: []
         }
     }
 
@@ -370,6 +379,7 @@ $ (document).ready(function() {
                 games.wacky
             ],
             previewList: [
+                games.preview
             ],
             makerList: [
                 {
