@@ -492,7 +492,7 @@ $ (document).ready(function() {
             maker: 'Artimax, AlejoFangamer, RandomErik, Princeoflight, Smartkin, Chrisay, EchoMask',
             desc: 'Ranking criteria: Fewest deaths',
             img: 'img/game/savetheship.jpg',
-            link: 'https://www.mediafire.com/file/ojxrnaxc9cqpar7/I+Wanna+Save+the+Ship.zip/file',
+            link: 'https://www.mediafire.com/file/i51huns5nkvytuh/I_Wanna_Save_the_Ship.zip/file',
             ranking: []
         }
     }
