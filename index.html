@@ -73,15 +73,17 @@
                                 v-bind:game="item"
                                 v-bind:key="item.id"
                             ></game-item>
-                            <!--<p style="text-align: center;">Next week's previews will usually be posted on Monday!</p>-->
+                            <p v-if="previewList.length == 0" style="text-align: center;">Next week's previews will usually be posted on Monday!</p>
 
-                            <h3>Next week's games</h3>
-                            <p style="text-align: center;">New games release every Saturday at 12PM EST.</p>
-                            <game-item
-                                v-for="item in previewList"
-                                v-bind:game="item"
-                                v-bind:key="item.id"
-                            ></game-item>
+                            <div v-if="previewList.length > 0">
+                                <h3>Next week's games</h3>
+                                <p style="text-align: center;">New games release every Saturday at 12PM EST.</p>
+                                <game-item
+                                    v-for="item in previewList"
+                                    v-bind:game="item"
+                                    v-bind:key="item.id"
+                                ></game-item>
+                            </div>
 
                             <h3>Past Games</h3>
                             <game-item
@@ -118,5 +120,5 @@
         
     </body>
 
-    <script src="script.js?v=6"></script>
+    <script src="script.js?v=7"></script>
 </html>

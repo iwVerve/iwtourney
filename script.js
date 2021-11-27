@@ -31,7 +31,7 @@ $ (document).ready(function() {
     switching = false;
 
     const nextGame = new Date('2021-11-27T12:00:00-05:00').getTime();
-    const submitEnd = new Date('2021-11-25T12:00:00-05:00').getTime();
+    const submitEnd = new Date('2021-12-02T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = Math.max(nextGame - Date.now(), 0);
         var days = Math.floor(t / (24*60*60*1000));
@@ -486,31 +486,30 @@ $ (document).ready(function() {
                 {name: 'idfk again#1005', score: '4:10:13', link: ''}
             ]
         },
-        preview: {
-            title: '? ????? ???? ??? ????',
+        savetheship: {
+            title: 'I Wanna Save the Ship',
             tags: [{tag: '▲53', class: 'difficulty'}, {tag: 'Adventure', class: 'adventure'}],
-            maker: 'Aarpsce',
-            desc: '',
-            img: 'img/game/preview.jpg',
-            link: '',
+            maker: 'Artimax, AlejoFangamer, RandomErik, Princeoflight, Smartkin, Chrisay, EchoMask',
+            desc: 'Ranking criteria: Fewest deaths',
+            img: 'img/game/savetheship.jpg',
+            link: 'https://www.mediafire.com/folder/db61gewsp9ls8/I_Wanna_Save_the_Ship',
             ranking: []
         }
     }
 
-    var app = new Vue({
+    app = new Vue({
         el: '#app',
         data: {
             currentList: [
-                games.seventwofour,
-                games.steeledge
+                games.savetheship
             ],
             gameList: [
                 games.power,
-                games.wacky
+                games.wacky,
+                games.seventwofour,
+                games.steeledge
             ],
-            previewList: [
-                games.preview
-            ],
+            previewList: [],
             makerList: [
                 {
                     name: '29th letter',
