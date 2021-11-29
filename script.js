@@ -30,7 +30,7 @@ $ (document).ready(function() {
 
     switching = false;
 
-    const nextGame = new Date('2021-11-27T12:00:00-05:00').getTime();
+    const nextGame = new Date('2021-12-04T12:00:00-05:00').getTime();
     const submitEnd = new Date('2021-12-02T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = Math.max(nextGame - Date.now(), 0);
@@ -64,9 +64,7 @@ $ (document).ready(function() {
                 <img :src="game.img" class="game-thumbnail">
                 <div class="game-info-container">
                     <div class="game-title-tags">
-                        <span class="game-title">
-                            {{game.title}}
-                        </span> 
+                        <span class="game-title" v-html="game.title"></span> 
                         <game-tag
                             v-for="tag in game.tags"
                             v-bind:tag="tag"
@@ -494,6 +492,24 @@ $ (document).ready(function() {
             img: 'img/game/savetheship.jpg',
             link: 'https://www.mediafire.com/file/2vhfyqg39bxuu61/I_Wanna_Save_the_Ship.zip/file',
             ranking: []
+        },
+        preview1: {
+            title: '<span style="color: blue;">???</span>',
+            tags: [{tag: '▲60', class: 'difficulty'}, {tag: 'Needle', class: 'needle'}],
+            maker: 'shign',
+            desc: '',
+            img: 'img/game/preview.jpg',
+            link: '',
+            ranking: []
+        },
+        preview2: {
+            title: '<span style="color: green;">???</span>',
+            tags: [{tag: '▲50', class: 'difficulty'}, {tag: 'Adventure', class: 'adventure'}],
+            maker: 'Duncan',
+            desc: '',
+            img: 'img/game/preview.jpg',
+            link: '',
+            ranking: []
         }
     }
 
@@ -509,7 +525,10 @@ $ (document).ready(function() {
                 games.seventwofour,
                 games.steeledge
             ],
-            previewList: [],
+            previewList: [
+                games.preview1,
+                games.preview2
+            ],
             makerList: [
                 {
                     name: '29th letter',
