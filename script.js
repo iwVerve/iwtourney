@@ -561,22 +561,22 @@ $ (document).ready(function() {
                 {name: 'Tapxynyc#6041', score: '882', link: ''}
             ]
         },
-        preview1: {
-            title: '<span style="color: blue;">???</span>',
+        perfectblue: {
+            title: 'I wanna be the Perfect Blue',
             tags: [{tag: '▲60', class: 'difficulty'}, {tag: 'Needle', class: 'needle'}],
             maker: 'shign',
-            desc: '',
-            img: 'img/game/preview.jpg',
-            link: '',
+            desc: 'Ranking critera: Fastest time',
+            img: 'img/game/perfectblue.jpg',
+            link: 'https://www.mediafire.com/file/30jouqunq1q8xyw/I+wanna+be+the+Perfect+Blue.rar/file',
             ranking: []
         },
-        preview2: {
-            title: '<span style="color: green;">???</span>',
+        michael: {
+            title: 'I Wanna Kill The Michael',
             tags: [{tag: '▲50', class: 'difficulty'}, {tag: 'Adventure', class: 'adventure'}],
             maker: 'Duncan',
-            desc: '',
-            img: 'img/game/preview.jpg',
-            link: '',
+            desc: 'Ranking critera: Fastest time',
+            img: 'img/game/michael.jpg',
+            link: 'https://www.mediafire.com/file/i776xu00ml8mayy/I+Wanna+Kill+The+Michael.zip/file',
             ranking: []
         }
     }
@@ -585,18 +585,17 @@ $ (document).ready(function() {
         el: '#app',
         data: {
             currentList: [
-                games.savetheship
+                games.perfectblue,
+                games.michael
             ],
             gameList: [
                 games.power,
                 games.wacky,
                 games.seventwofour,
-                games.steeledge
+                games.steeledge,
+                games.savetheship
             ],
-            previewList: [
-                games.preview1,
-                games.preview2
-            ],
+            previewList: [],
             makerList: [
                 {
                     name: '29th letter',
