@@ -30,8 +30,8 @@ $ (document).ready(function() {
 
     switching = false;
 
-    const nextGame = new Date('2021-12-04T12:00:00-05:00').getTime();
-    const submitEnd = new Date('2021-12-02T12:00:00-05:00').getTime();
+    const nextGame = new Date('2021-12-11T12:00:00-05:00').getTime();
+    const submitEnd = new Date('2021-12-09T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = Math.max(nextGame - Date.now(), 0);
         var days = Math.floor(t / (24*60*60*1000));
@@ -578,7 +578,25 @@ $ (document).ready(function() {
             img: 'img/game/michael.jpg',
             link: 'https://www.mediafire.com/file/i776xu00ml8mayy/I+Wanna+Kill+The+Michael.zip/file',
             ranking: []
-        }
+        },
+        preview1: {
+            title: '???',
+            tags: [{tag: '▲50', class: 'difficulty'}, {tag: 'Adventure', class: 'adventure'}],
+            maker: 'anxKha',
+            desc: '',
+            img: 'img/game/preview.jpg',
+            link: '',
+            ranking: ''
+        },
+        preview2: {
+            title: '???',
+            tags: [{tag: '▲59', class: 'difficulty'}, {tag: 'Needle', class: 'needle'}],
+            maker: 'Dono',
+            desc: '',
+            img: 'img/game/preview.jpg',
+            link: '',
+            ranking: ''
+        },
     }
 
     app = new Vue({
@@ -595,7 +613,10 @@ $ (document).ready(function() {
                 games.steeledge,
                 games.savetheship
             ],
-            previewList: [],
+            previewList: [
+                games.preview1,
+                games.preview2
+            ],
             makerList: [
                 {
                     name: '29th letter',
