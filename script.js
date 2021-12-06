@@ -583,7 +583,7 @@ $ (document).ready(function() {
             title: '???',
             tags: [{tag: '▲50', class: 'difficulty'}, {tag: 'Adventure', class: 'adventure'}],
             maker: 'anxKha',
-            desc: '',
+            desc: '🏫',
             img: 'img/game/preview.jpg',
             link: '',
             ranking: ''
