@@ -30,8 +30,8 @@ $ (document).ready(function() {
 
     switching = false;
 
-    const nextGame = new Date('2021-12-11T12:00:00-05:00').getTime();
-    const submitEnd = new Date('2021-12-09T12:00:00-05:00').getTime();
+    const nextGame = new Date('2021-12-18T12:00:00-05:00').getTime();
+    const submitEnd = new Date('2021-12-16T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = Math.max(nextGame - Date.now(), 0);
         var days = Math.floor(t / (24*60*60*1000));
@@ -684,23 +684,23 @@ $ (document).ready(function() {
                 {name: 'TTBB#8359', score: '3:03:07', link: ''}
             ]
         },
-        preview1: {
-            title: '???',
+        heavenlyhost: {
+            title: 'I Wanna Escape Heavenly Host',
             tags: [{tag: '▲50', class: 'difficulty'}, {tag: 'Adventure', class: 'adventure'}],
             maker: 'anxKha',
-            desc: '🏫',
-            img: 'img/game/preview.jpg',
-            link: '',
-            ranking: ''
+            desc: 'Ranking critera: Fastest time 🏫',
+            img: 'img/game/host.jpg',
+            link: 'https://www.mediafire.com/file/7zmu8tys2drpcz9/I_Wanna_Escape_Heavenly_Host.zip/file',
+            ranking: []
         },
-        preview2: {
-            title: '???',
+        duloxetine: {
+            title: 'I Wanna Duloxetine Caravan Mix',
             tags: [{tag: '▲59', class: 'difficulty'}, {tag: 'Needle', class: 'needle'}],
             maker: 'Dono',
-            desc: '',
-            img: 'img/game/preview.jpg',
-            link: '',
-            ranking: ''
+            desc: 'Ranking critera: Fastest time',
+            img: 'img/game/duloxetine.jpg',
+            link: 'https://www.mediafire.com/file/rniv5of8f3pfvwj/IWDCM.zip/file',
+            ranking: []
         },
     }
 
@@ -708,19 +708,19 @@ $ (document).ready(function() {
         el: '#app',
         data: {
             currentList: [
-                games.perfectblue,
-                games.michael
+                games.heavenlyhost,
+                games.duloxetine
             ],
             gameList: [
                 games.power,
                 games.wacky,
                 games.seventwofour,
                 games.steeledge,
-                games.savetheship
+                games.savetheship,
+                games.perfectblue,
+                games.michael
             ],
             previewList: [
-                games.preview1,
-                games.preview2
             ],
             makerList: [
                 {
