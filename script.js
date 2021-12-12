@@ -690,7 +690,7 @@ $ (document).ready(function() {
             maker: 'anxKha',
             desc: 'Ranking critera: Fastest time 🏫',
             img: 'img/game/host.jpg',
-            link: 'https://www.mediafire.com/file/7zmu8tys2drpcz9/I_Wanna_Escape_Heavenly_Host.zip/file',
+            link: 'https://www.mediafire.com/file/hpmjy6q4dn6v1qc/I+Wanna+Escape+Heavenly+Host.zip/file',
             ranking: []
         },
         duloxetine: {
