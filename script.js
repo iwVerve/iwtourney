@@ -702,6 +702,15 @@ $ (document).ready(function() {
             link: 'https://www.mediafire.com/file/rniv5of8f3pfvwj/IWDCM.zip/file',
             ranking: []
         },
+        preview: {
+            title: '???',
+            tags: [{tag: '▲72', class: 'difficulty'}, {tag: 'Needle', class: 'needle'}],
+            maker: 'aNobodi',
+            desc: '',
+            img: 'img/game/preview.jpg',
+            link: '',
+            ranking: []
+        }
     }
 
     app = new Vue({
@@ -721,6 +730,7 @@ $ (document).ready(function() {
                 games.michael
             ],
             previewList: [
+                games.preview
             ],
             makerList: [
                 {
