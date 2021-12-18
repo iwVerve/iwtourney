@@ -30,8 +30,8 @@ $ (document).ready(function() {
 
     switching = false;
 
-    const nextGame = new Date('2021-12-18T12:00:00-05:00').getTime();
-    const submitEnd = new Date('2021-12-16T12:00:00-05:00').getTime();
+    const nextGame = new Date('2022-01-01T12:00:00-05:00').getTime();
+    const submitEnd = new Date('2021-12-23T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = Math.max(nextGame - Date.now(), 0);
         var days = Math.floor(t / (24*60*60*1000));
@@ -816,13 +816,13 @@ $ (document).ready(function() {
                 {name: 'Anuj#7871', score: '2:35:14', link: ''}
             ]
         },
-        preview: {
-            title: '???',
+        retribution: {
+            title: 'I Wanna Know my Retribution',
             tags: [{tag: '▲72', class: 'difficulty'}, {tag: 'Needle', class: 'needle'}],
-            maker: 'aNobodi',
-            desc: '',
-            img: 'img/game/preview.jpg',
-            link: '',
+            maker: 'AliceNobodi',
+            desc: 'Ranking criteria: Fastest time',
+            img: 'img/game/retribution.jpg',
+            link: 'https://www.mediafire.com/file/tsojwxc6nh5pxmr/I_Wanna_Know_my_Retribution.zip/file',
             ranking: []
         }
     }
@@ -831,8 +831,7 @@ $ (document).ready(function() {
         el: '#app',
         data: {
             currentList: [
-                games.heavenlyhost,
-                games.duloxetine
+                games.retribution
             ],
             gameList: [
                 games.power,
@@ -841,10 +840,11 @@ $ (document).ready(function() {
                 games.steeledge,
                 games.savetheship,
                 games.perfectblue,
-                games.michael
+                games.michael,
+                games.heavenlyhost,
+                games.duloxetine
             ],
             previewList: [
-                games.preview
             ],
             makerList: [
                 {
@@ -866,6 +866,11 @@ $ (document).ready(function() {
                     name: 'AlejoFangamer',
                     img: 'img/maker/alejo.jpg',
                     links: [{link: 'https://twitter.com/AlejoFangamer', img: 'img/icon/twitter.png'}]
+                },
+                {
+                    name: 'AliceNobodi',
+                    img: 'img/maker/alice.jpg',
+                    links: [{link: 'https://twitter.com/AliceNobodi', img: 'img/icon/twitter.png'}]
                 },
                 {
                     name: 'anxKha',
@@ -956,11 +961,6 @@ $ (document).ready(function() {
                     name: 'lilly',
                     img: 'img/maker/lilly.jpg',
                     links: [{link: 'https://twitter.com/TomorrowSuicide', img: 'img/icon/twitter.png'}]
-                },
-                {
-                    name: 'JoshuaHB',
-                    img: 'img/maker/joshua.jpg',
-                    links: [{link: 'https://twitter.com/joshhoffboring', img: 'img/icon/twitter.png'}]
                 },
                 {
                     name: 'Juan285',
