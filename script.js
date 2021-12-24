@@ -823,7 +823,35 @@ $ (document).ready(function() {
             desc: 'Ranking criteria: Fastest time',
             img: 'img/game/retribution.jpg',
             link: 'https://www.mediafire.com/file/tsojwxc6nh5pxmr/I_Wanna_Know_my_Retribution.zip/file',
-            ranking: []
+            ranking: [
+                {name: 'Nogard#9860', score: '1:54:25', link: 'https://youtu.be/sPbeXje2ySQ'},
+                {name: 'bv#3948', score: '2:15:06', link: 'https://www.twitch.tv/videos/1237262060'},
+                {name: 'Cosmoing#9001', score: '2:18:39', link: 'https://youtu.be/APT3JL-YQBE'},
+                {name: 'P2#7591', score: '2:20:40', link: 'https://www.youtube.com/watch?v=0oLvbkOSUi0'},
+                {name: 'chrisg#0492', score: '2:21:43', link: 'https://drive.google.com/drive/u/0/folders/17rDUmnW9b63iNaAgavM1GBM4o4BXmcjh'},
+                {name: 'シュガー#6238', score: '2:28:44', link: 'https://www.youtube.com/watch?v=l1ouvEJ2lM0'},
+                {name: 'Mastermaxify#2893', score: '2:40:02', link: 'https://youtu.be/eHUnsH3Do1k'},
+                {name: 'anxKha#2007', score: '2:44:52', link: ''},
+                {name: 'JPRG666#4320', score: '2:45:18', link: 'https://www.youtube.com/watch?v=_gQ-w5F7Y_4'},
+                {name: 'Schulzer#5885', score: '2:54:35', link: 'https://www.twitch.tv/videos/1239445142'},
+                {name: 'touhoe, touhoe#7049', score: '3:06:15', link: ''},
+                {name: 'EchoMask#8965', score: '3:13:07', link: 'https://www.twitch.tv/videos/1236924873'},
+                {name: 'あずもる#3594', score: '3:13:36', link: 'https://www.youtube.com/watch?v=6WAZKXhphfo&ab_channel=%E3%81%82%E3%81%9A%E3%82%82%E3%82%8B'},
+                {name: 'pieceofcheese87', score: '3:22:48', link: ''},
+                {name: 'Huse#7457', score: '3:32:48', link: 'https://www.twitch.tv/videos/1236945923?t=00h15m46s'},
+                {name: 'TetraField#1275', score: '3:53:41', link: ''},
+                {name: 'shign#4549', score: '4:02:54', link: ''},
+                {name: 'Arras#6153', score: '4:11:27', link: ''},
+                {name: 'どるっぴ#4013', score: '4:17:43', link: 'https://www.youtube.com/watch?v=M2l-M8KDXmY'},
+                {name: 'ぎょーざ#5156', score: '4:40:28', link: 'https://www.twitch.tv/videos/1237512522'},
+                {name: 'ぶべ#1091', score: '5:01:14', link: 'https://pastebin.com/99Md4EFk'},
+                {name: 'eevee314', score: '5:06:16', link: 'https://youtu.be/7Bqc1TAO8vc?t=216'},
+                {name: 'フライ & フライ#9601', score: '5:39:38', link: ''},
+                {name: 'Kiyoshi#8258', score: '5:40:49', link: ''},
+                {name: 'ナッツ#0286', score: '6:20:51', link: 'https://pastebin.com/WTULVw0z'},
+                {name: 'Havamati#1687', score: '8:23:45', link: ''},
+                {name: 'bantsmen#3247', score: '14:29:16', link: 'https://pastebin.com/sfSj04qv'}
+            ]
         }
     }
 
