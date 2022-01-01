@@ -31,7 +31,7 @@ $ (document).ready(function() {
     switching = false;
 
     const nextGame = new Date('2022-01-01T12:00:00-05:00').getTime();
-    const submitEnd = new Date('2022-06-05T12:00:00-05:00').getTime();
+    const submitEnd = new Date('2022-01-06T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = Math.max(nextGame - Date.now(), 0);
         var days = Math.floor(t / (24*60*60*1000));
@@ -853,22 +853,22 @@ $ (document).ready(function() {
                 {name: 'bantsmen#3247', score: '14:29:16', link: 'https://pastebin.com/sfSj04qv'}
             ]
         },
-        preview1: {
-            title: '???',
+        bigshot: {
+            title: 'I wanna be a Big Shot',
             tags: [{tag: '▲57.5', class:'difficulty'}, {tag: 'Adventure', class: 'adventure'}],
             maker: 'EchoMask, RandomErik',
-            desc: '',
-            img: 'img/game/preview.jpg',
-            link: '',
+            desc: 'Ranking criteria: Fastest time',
+            img: 'img/game/bigshot.jpg',
+            link: 'https://www.mediafire.com/file/z9tiu40wrk7oxqz/I+wanna+be+a+Big+Shot.zip/file',
             ranking: []
         },
-        preview2: {
-            title: '???',
+        v: {
+            title: 'I Wanna Be The V',
             tags: [{tag: '▲70', class:'difficulty'}, {tag: 'Avoidance', class: 'avoidance'}],
             maker: 'lilly',
-            desc: '',
-            img: 'img/game/preview.jpg',
-            link: '',
+            desc: 'Ranking criteria: Fastest time',
+            img: 'img/game/v.jpg',
+            link: 'https://www.mediafire.com/file/ytrdyuli0a61de0/I_wanna_be_the_V_Ver.IWT.zip/file',
             ranking: []
         }
     }
@@ -877,7 +877,8 @@ $ (document).ready(function() {
         el: '#app',
         data: {
             currentList: [
-                games.retribution
+                games.bigshot,
+                games.v
             ],
             gameList: [
                 games.power,
@@ -888,11 +889,10 @@ $ (document).ready(function() {
                 games.perfectblue,
                 games.michael,
                 games.heavenlyhost,
-                games.duloxetine
+                games.duloxetine,
+                games.retribution
             ],
             previewList: [
-                games.preview1,
-                games.preview2
             ],
             makerList: [
                 {
