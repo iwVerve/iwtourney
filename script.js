@@ -30,7 +30,7 @@ $ (document).ready(function() {
 
     switching = false;
 
-    const nextGame = new Date('2022-01-01T12:00:00-05:00').getTime();
+    const nextGame = new Date('2022-01-08T12:00:00-05:00').getTime();
     const submitEnd = new Date('2022-01-06T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = Math.max(nextGame - Date.now(), 0);
@@ -870,6 +870,24 @@ $ (document).ready(function() {
             img: 'img/game/v.jpg',
             link: 'https://www.mediafire.com/file/ytrdyuli0a61de0/I_wanna_be_the_V_Ver.IWT.zip/file',
             ranking: []
+        },
+        preview1: {
+            title: '???',
+            tags: [{tag: '▲55', class: 'difficulty'}, {tag: 'Adventure', class: 'adventure'}],
+            maker: 'arzztt',
+            desc: '',
+            img: 'img/game/arzztt.jpg',
+            link: '',
+            ranking: []
+        },
+        preview2: {
+            title: '???',
+            tags: [{tag: '▲65', class: 'difficulty'}, {tag: 'Adventure', class: 'adventure'}],
+            maker: 'Rossiter',
+            desc: '',
+            img: 'img/game/preview.jpg',
+            link: '',
+            ranking: []
         }
     }
 
@@ -893,6 +911,8 @@ $ (document).ready(function() {
                 games.retribution
             ],
             previewList: [
+                games.preview1,
+                games.preview2
             ],
             makerList: [
                 {
