@@ -860,7 +860,7 @@ $ (document).ready(function() {
             desc: 'Ranking criteria: Fastest time',
             img: 'img/game/bigshot.jpg',
             link: 'https://www.mediafire.com/file/z9tiu40wrk7oxqz/I+wanna+be+a+Big+Shot.zip/file',
-            ranking: [
+            ranking: [/*
                 {name: 'Cosmoing#9001', score: '0:50:57', link: 'https://youtu.be/mnleBSC7p8Q'},
                 {name: 'pieceofcheese87', score: '0:52:28', link: 'https://youtu.be/zdBk_JdYZ0s'},
                 {name: 'シュガー#6238', score: '0:55:02', link: 'https://www.youtube.com/watch?v=stZgc0vvwy0'},
@@ -892,7 +892,7 @@ $ (document).ready(function() {
                 {name: 'orcishgreenland#8681', score: '2:44:17', link: ''},
                 {name: 'Huse#7457', score: '2:48:14', link: ''},
                 {name: 'Havamati#1687', score: '3:00:20', link: ''},
-                {name: 'Framzo#0420', score: '5:36:05', link: ''}
+                {name: 'Framzo#0420', score: '5:36:05', link: ''}*/
             ]
         },
         v: {
@@ -902,7 +902,7 @@ $ (document).ready(function() {
             desc: 'Ranking criteria: Fastest time',
             img: 'img/game/v.jpg',
             link: 'https://www.mediafire.com/file/ytrdyuli0a61de0/I_wanna_be_the_V_Ver.IWT.zip/file',
-            ranking: [
+            ranking: [/*
                 {name: 'iraqlobster01#2536', score: '0:23:37', link: 'https://www.youtube.com/watch?v=5FfYM0LKrGo'},
                 {name: 'Mastermaxify#2893', score: '0:35:01', link: 'https://www.twitch.tv/videos/1249937311'},
                 {name: 'Razzor#4318', score: '0:47:22', link: 'https://youtu.be/eJ4l-6m4lb0'},
@@ -941,7 +941,7 @@ $ (document).ready(function() {
                 {name: 'waka  waka#0605', score: '0:58.54/2:00', link: ''},
                 {name: 'Tapxynyc#6041', score: '0:55.12/2:00', link: ''},
                 {name: 'MikuStar3#2607', score: '0:46.72/2:00', link: ''},
-                {name: 'pieceofcheese87', score: '0:26.64/2:00', link: ''}
+                {name: 'pieceofcheese87', score: '0:26.64/2:00', link: ''}*/
             ]
         },
         preview1: {
