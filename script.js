@@ -31,7 +31,7 @@ $ (document).ready(function() {
     switching = false;
 
     const nextGame = new Date('2022-01-08T12:00:00-05:00').getTime();
-    const submitEnd = new Date('2022-01-06T12:00:00-05:00').getTime();
+    const submitEnd = new Date('2022-01-13T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = Math.max(nextGame - Date.now(), 0);
         var days = Math.floor(t / (24*60*60*1000));
@@ -74,9 +74,7 @@ $ (document).ready(function() {
                     <p class="game-makers">
                         {{game.maker}}
                     </p>
-                    <p class="game-description" style="text-align: center">
-                        {{game.desc}}
-                    </p>
+                    <p class="game-description" style="text-align: center" v-html="game.desc"></p>
                 </div>
                 <div class="game-right-bar">
                     <a v-if="game.link != ''" :href="game.link" class="download-button" target="_blank"><img src="img/icon/download.png">Download</a>
@@ -944,22 +942,22 @@ $ (document).ready(function() {
                 {name: 'pieceofcheese87', score: '0:26.64/2:00', link: ''}
             ]
         },
-        preview1: {
-            title: '???',
+        lookinside: {
+            title: 'I Wanna Look Inside',
             tags: [{tag: '▲55', class: 'difficulty'}, {tag: 'Adventure', class: 'adventure'}],
             maker: 'arzztt',
-            desc: '',
-            img: 'img/game/arzztt.jpg',
-            link: '',
+            desc: 'Ranking criteria: Fewest Deaths',
+            img: 'img/game/lookinside.jpg',
+            link: 'https://www.mediafire.com/file/0qxilbnruuwece6/I_Wanna_Look_Inside.zip/file',
             ranking: []
         },
-        preview2: {
-            title: '???',
+        foundry: {
+            title: 'I Wanna Escape The Foundry',
             tags: [{tag: '▲65', class: 'difficulty'}, {tag: 'Adventure', class: 'adventure'}],
             maker: 'Rossiter',
-            desc: '',
-            img: 'img/game/preview.jpg',
-            link: '',
+            desc: 'Ranking criteria: Fastest time (<b>HARD difficulty</b>)',
+            img: 'img/game/foundry.jpg',
+            link: 'https://www.mediafire.com/file/2cetz8ju8yczk57/EscapeTheFoundry106.zip/file',
             ranking: []
         }
     }
@@ -968,8 +966,8 @@ $ (document).ready(function() {
         el: '#app',
         data: {
             currentList: [
-                games.bigshot,
-                games.v
+                games.lookinside,
+                games.foundry
             ],
             gameList: [
                 games.power,
@@ -981,11 +979,11 @@ $ (document).ready(function() {
                 games.michael,
                 games.heavenlyhost,
                 games.duloxetine,
-                games.retribution
+                games.retribution,
+                games.bigshot,
+                games.v
             ],
             previewList: [
-                games.preview1,
-                games.preview2
             ],
             makerList: [
                 {
