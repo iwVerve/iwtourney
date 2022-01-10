@@ -963,7 +963,7 @@ $ (document).ready(function() {
         preview: {
             title: '???',
             tags: [{tag: '▲75', class: 'difficulty'}, {tag: 'Needle', class: 'needle'}],
-            maker: 'shign, ...',
+            maker: 'shign, very cool, ...',
             desc: '',
             img: 'img/game/preview.jpg',
             link: '',
