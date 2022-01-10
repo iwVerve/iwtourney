@@ -30,7 +30,7 @@ $ (document).ready(function() {
 
     switching = false;
 
-    const nextGame = new Date('2022-01-08T12:00:00-05:00').getTime();
+    const nextGame = new Date('2022-01-15T12:00:00-05:00').getTime();
     const submitEnd = new Date('2022-01-13T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = Math.max(nextGame - Date.now(), 0);
@@ -959,6 +959,15 @@ $ (document).ready(function() {
             img: 'img/game/foundry.jpg',
             link: 'https://www.mediafire.com/file/2cetz8ju8yczk57/EscapeTheFoundry106.zip/file',
             ranking: []
+        },
+        preview: {
+            title: '???',
+            tags: [{tag: '▲75', class: 'difficulty'}, {tag: 'Needle', class: 'needle'}],
+            maker: 'shign, ...',
+            desc: '',
+            img: 'img/game/preview.jpg',
+            link: '',
+            ranking: []
         }
     }
 
@@ -984,6 +993,7 @@ $ (document).ready(function() {
                 games.v
             ],
             previewList: [
+                games.preview
             ],
             makerList: [
                 {
