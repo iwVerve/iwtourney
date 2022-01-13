@@ -963,7 +963,7 @@ $ (document).ready(function() {
         preview: {
             title: '???',
             tags: [{tag: '▲75', class: 'difficulty'}, {tag: 'Needle', class: 'needle'}],
-            maker: 'shign, very cool, 29th letter, popop614, ...',
+            maker: 'shign, very cool, 29th letter, popop614, Aroxon, Kizelf, PlayerDash2017, ...',
             desc: '',
             img: 'img/game/preview.jpg',
             link: '',
