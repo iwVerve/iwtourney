@@ -31,7 +31,7 @@ $ (document).ready(function() {
     switching = false;
 
     const nextGame = new Date('2022-01-15T12:00:00-05:00').getTime();
-    const submitEnd = new Date('2022-01-13T12:00:00-05:00').getTime();
+    const submitEnd = new Date('2022-01-20T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = Math.max(nextGame - Date.now(), 0);
         var days = Math.floor(t / (24*60*60*1000));
@@ -1036,13 +1036,13 @@ $ (document).ready(function() {
                 {name: 'bantsmen#3247', score: '0:55:00', link: 'https://www.twitch.tv/videos/1257894370'}
             ]
         },
-        preview: {
-            title: '???',
+        jamplex: {
+            title: 'Jtool Jamplex',
             tags: [{tag: '▲75', class: 'difficulty'}, {tag: 'Needle', class: 'needle'}],
-            maker: 'shign, very cool, 29th letter, popop614, Aroxon, Kizelf, PlayerDash2017, AGuyNamedTyler, Cthaere, Duncan, ...',
-            desc: '',
-            img: 'img/game/preview.jpg',
-            link: '',
+            maker: 'shign, 29th Letter, AGuyNamedTyler, Aroxon, Cthaere, Duncan, FairLight212, FancyFishie, happy, Jopagu, Kai, Kiiview, Kizelf, PlayerDash2017, popop614, R3ked, Tayashie, very cool',
+            desc: 'Ranking criteria: Fastest time',
+            img: 'img/game/jamplex.jpg',
+            link: 'https://www.mediafire.com/file/niqx66lrhs2wipk/Jtool+Jamplex.rar/file',
             ranking: []
         }
     }
@@ -1051,8 +1051,7 @@ $ (document).ready(function() {
         el: '#app',
         data: {
             currentList: [
-                games.lookinside,
-                games.foundry
+                games.jamplex
             ],
             gameList: [
                 games.power,
@@ -1066,10 +1065,11 @@ $ (document).ready(function() {
                 games.duloxetine,
                 games.retribution,
                 games.bigshot,
-                games.v
+                games.v,
+                games.lookinside,
+                games.foundry
             ],
             previewList: [
-                games.preview
             ],
             makerList: [
                 {
