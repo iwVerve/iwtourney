@@ -30,7 +30,7 @@ $ (document).ready(function() {
 
     switching = false;
 
-    const nextGame = new Date('2022-01-15T12:00:00-05:00').getTime();
+    const nextGame = new Date('2022-01-22T12:00:00-05:00').getTime();
     const submitEnd = new Date('2022-01-20T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = Math.max(nextGame - Date.now(), 0);
@@ -1044,6 +1044,24 @@ $ (document).ready(function() {
             img: 'img/game/jamplex.jpg',
             link: 'https://www.mediafire.com/file/niqx66lrhs2wipk/Jtool+Jamplex.rar/file',
             ranking: []
+        },
+        preview1: {
+            title: '???',
+            tags: [{tag: '▲55', class: 'difficulty'}, {tag: 'Adventure', class: 'adventure'}],
+            maker: 'renex',
+            desc: '',
+            img: 'img/game/renex.png',
+            link: '',
+            ranking: []
+        },
+        preview2: {
+            title: '???',
+            tags: [{tag: '▲60', class: 'difficulty'}, {tag: 'Luck', class: 'luck'}],
+            maker: 'arzztt',
+            desc: '',
+            img: 'img/game/arzztt.jpg',
+            link: '',
+            ranking: []
         }
     }
 
@@ -1070,6 +1088,8 @@ $ (document).ready(function() {
                 games.foundry
             ],
             previewList: [
+                games.preview1,
+                games.preview2
             ],
             makerList: [
                 {
