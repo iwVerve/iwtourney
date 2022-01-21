@@ -1043,7 +1043,26 @@ $ (document).ready(function() {
             desc: 'Ranking criteria: Fastest time',
             img: 'img/game/jamplex.jpg',
             link: 'https://www.mediafire.com/file/niqx66lrhs2wipk/Jtool+Jamplex.rar/file',
-            ranking: []
+            ranking: [
+                {name: 'ElRaimon2000#9965', score: '3:13:06', link: 'https://youtu.be/GH1pKeBs9fQ'},
+                {name: 'P2#7591', score: '3:17:53', link: 'https://www.youtube.com/playlist?list=PLT8c7Zezmkw7my67otCYdFGN64VbSfcB6'},
+                {name: 'pieceofcheese87', score: '4:09:02', link: ''},
+                {name: 'Stonk#3212', score: '4:10:11', link: 'https://pastebin.com/9aY1hrjP'},
+                {name: 'chrisg#0492', score: '4:18:58', link: ''},
+                {name: 'Nogard#9860', score: '4:22:15', link: 'https://pastebin.com/yj2Dx7Gn'},
+                {name: 'シュガー#6238', score: '4:36:20', link: 'https://youtu.be/QEdxXQXM8u4'},
+                {name: 'Skuldafn#8051', score: '4:41:17', link: 'https://www.twitch.tv/videos/1264578546'},
+                {name: '_ c _#3089', score: '5:15:27', link: ''},
+                {name: 'Cabbage#2356', score: '6:38:59', link: ''},
+                {name: 'bv#3948', score: '6:39:52', link: ''},
+                {name: 'あずもる#3594', score: '7:12:35', link: 'https://pastebin.com/X0GfAbCX'},
+                {name: 'EchoMask#8965', score: '7:13:06', link: 'https://pastebin.com/icZMFHuy'},
+                {name: 'フライ#9601', score: '10:11:20', link: 'https://pastebin.com/ccfV6c55'},
+                {name: 'Schulzer#5885', score: '12:05:11', link: 'https://www.twitch.tv/schulzer9999/videos?filter=archives&sort=time'},
+                {name: 'touhoe#7049', score: '12:07:38', link: ''},
+                {name: 'ぎょーざ#5156', score: '13:28:41', link: ''},
+                {name: 'ナッツ#0286', score: '15:52:00', link: 'https://pastebin.com/GSipQJzq'}
+            ]
         },
         preview1: {
             title: '???',
