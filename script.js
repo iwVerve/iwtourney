@@ -31,7 +31,7 @@ $ (document).ready(function() {
     switching = false;
 
     const nextGame = new Date('2022-01-22T12:00:00-05:00').getTime();
-    const submitEnd = new Date('2022-01-20T12:00:00-05:00').getTime();
+    const submitEnd = new Date('2022-01-27T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = Math.max(nextGame - Date.now(), 0);
         var days = Math.floor(t / (24*60*60*1000));
@@ -1064,22 +1064,22 @@ $ (document).ready(function() {
                 {name: 'ナッツ#0286', score: '15:52:00', link: 'https://pastebin.com/GSipQJzq'}
             ]
         },
-        preview1: {
-            title: '???',
+        clown: {
+            title: 'I Wanna Catch the Clown',
             tags: [{tag: '▲55', class: 'difficulty'}, {tag: 'Adventure', class: 'adventure'}],
             maker: 'renex',
-            desc: '',
-            img: 'img/game/renex.png',
-            link: '',
+            desc: 'Ranking criteria: Fewest resets, normal 100% (silver trophy)',
+            img: 'img/game/clown.jpg',
+            link: 'https://www.mediafire.com/file/ux1t33326wt0k9f/catch-the-clown.7z/file',
             ranking: []
         },
-        preview2: {
-            title: '???',
+        fries: {
+            title: 'I Wanna Are These The World\'s Most Crispy Fries',
             tags: [{tag: '▲60', class: 'difficulty'}, {tag: 'Luck', class: 'luck'}],
             maker: 'arzztt',
-            desc: '',
-            img: 'img/game/arzztt.jpg',
-            link: '',
+            desc: 'Ranking criteria: Fewest deaths (resetting counts as a death)',
+            img: 'img/game/fries.jpg',
+            link: 'https://www.mediafire.com/file/tjjnkzwf6l7dava/I_Wanna_Are_These_The_World%2527s_Most_Crispy_Fries.zip/file',
             ranking: []
         }
     }
@@ -1088,7 +1088,8 @@ $ (document).ready(function() {
         el: '#app',
         data: {
             currentList: [
-                games.jamplex
+                games.clown,
+                games.fries
             ],
             gameList: [
                 games.power,
@@ -1104,11 +1105,10 @@ $ (document).ready(function() {
                 games.bigshot,
                 games.v,
                 games.lookinside,
-                games.foundry
+                games.foundry,
+                games.jamplex
             ],
             previewList: [
-                games.preview1,
-                games.preview2
             ],
             makerList: [
                 {
