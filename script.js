@@ -1087,7 +1087,7 @@ $ (document).ready(function() {
             tags: [{tag: '▲66', class: 'difficulty'}, {tag: 'Uh', class: 'special'}],
             maker: 'Synthasmagoria',
             desc: '',
-            img: 'img/game/preview.jpg',
+            img: 'img/game/synth.jpg',
             link: '',
             ranking: []
         },
