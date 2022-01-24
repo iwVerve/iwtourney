@@ -30,7 +30,7 @@ $ (document).ready(function() {
 
     switching = false;
 
-    const nextGame = new Date('2022-01-22T12:00:00-05:00').getTime();
+    const nextGame = new Date('2022-01-29T12:00:00-05:00').getTime();
     const submitEnd = new Date('2022-01-27T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = Math.max(nextGame - Date.now(), 0);
@@ -1081,6 +1081,24 @@ $ (document).ready(function() {
             img: 'img/game/fries.jpg',
             link: 'https://www.mediafire.com/file/tjjnkzwf6l7dava/I_Wanna_Are_These_The_World%2527s_Most_Crispy_Fries.zip/file',
             ranking: []
+        },
+        preview1: {
+            title: '???',
+            tags: [{tag: '▲66', class: 'difficulty'}, {tag: 'Uh', class: 'special'}],
+            maker: 'Synthasmagoria',
+            desc: '',
+            img: 'img/game/preview.jpg',
+            link: '',
+            ranking: []
+        },
+        preview2: {
+            title: '???',
+            tags: [{tag: '▲70', class: 'difficulty'}, {tag: 'Needle', class: 'needle'}],
+            maker: 'supaguy, Razzor, YoSniper, EchoMask, Solgryn, Jeff Bezos, Princeoflight, Influcca, Synthasmagoria, Wolfiexe, Cthaere, Freddy Fazbear, Kale, shign, Queen Elizabeth, Duncan, indihome paket phoenix, Aolan, Skulldude_, Luigi, Tralexium, flaviaflave, Markiplier, arzztt, Ukraine, Stonk, George Bush, RandomChaos_, Mario, Verve, John Games, SoapBar1242, AlexTheTroller, 128-Up, Nogard, Warren Buffet, snifit, YaBoiMarcAntony, twitch.tv/wolsk, kurath, vegetagoku2006, AlejoFangamer, Yoshi, AliceNobodi, Thenadertwo, very cool, Anuj071',
+            desc: '',
+            img: 'img/game/game.png',
+            link: '',
+            ranking: []
         }
     }
 
@@ -1109,6 +1127,8 @@ $ (document).ready(function() {
                 games.jamplex
             ],
             previewList: [
+                games.preview1,
+                games.preview2
             ],
             makerList: [
                 {
