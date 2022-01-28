@@ -1093,7 +1093,7 @@ $ (document).ready(function() {
                 {name: 'ぶべ#1091', score: '161', link: 'https://www.youtube.com/watch?v=oQ7DSL16J94'},
                 {name: 'Arras#6153', score: '173', link: ''},
                 {name: 'Huse#7457', score: '191', link: ''},
-                {name: 'PlayerDash2017, PlayerDash2017#4926', score: '207', link: 'https://www.youtube.com/watch?v=nGLRbzrM4DA'},
+                {name: 'PlayerDash2017#4926', score: '207', link: 'https://www.youtube.com/watch?v=nGLRbzrM4DA'},
                 {name: 'Kiyoshi#8258', score: '222', link: ''},
                 {name: 'Sanctuspaladin#0570', score: '227', link: ''},
                 {name: 'bv#3948', score: '229', link: ''},
