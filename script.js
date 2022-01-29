@@ -30,8 +30,8 @@ $ (document).ready(function() {
 
     switching = false;
 
-    const nextGame = new Date('2022-01-29T12:00:00-05:00').getTime();
-    const submitEnd = new Date('2022-01-27T12:00:00-05:00').getTime();
+    const nextGame = new Date('2022-01-05T12:00:00-05:00').getTime();
+    const submitEnd = new Date('2022-02-03T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = Math.max(nextGame - Date.now(), 0);
         var days = Math.floor(t / (24*60*60*1000));
@@ -1147,22 +1147,22 @@ $ (document).ready(function() {
                 {name: 'bantsmen#3247', score: '8955', link: 'https://pastebin.com/Pjx6Xhi6'}
             ]
         },
-        preview1: {
-            title: '???',
+        physicist: {
+            title: 'NUCLEAR PHYSICIST',
             tags: [{tag: '▲66', class: 'difficulty'}, {tag: 'Uh', class: 'special'}],
             maker: 'Synthasmagoria',
-            desc: '',
-            img: 'img/game/synth.jpg',
-            link: '',
+            desc: 'Ranking criteria: Fewest deaths (resetting counts as a death)',
+            img: 'img/game/physicist.jpg',
+            link: 'https://synthasmagoria.itch.io/nuclear-physicist?secret=mwihXHfCC7rs8YD5B6hyxQ7EYw',
             ranking: []
         },
-        preview2: {
-            title: '???',
+        fields: {
+            title: 'I Wanna Explore The Rectilinear Fields',
             tags: [{tag: '▲70', class: 'difficulty'}, {tag: 'Needle', class: 'needle'}],
-            maker: 'supaguy, Razzor, YoSniper, EchoMask, Solgryn, Jeff Bezos, Princeoflight, Influcca, Synthasmagoria, Wolfiexe, Cthaere, Freddy Fazbear, Kale, shign, Queen Elizabeth, Duncan, indihome paket phoenix, Aolan, Skulldude_, Luigi, Tralexium, flaviaflave, Markiplier, arzztt, Ukraine, Stonk, George Bush, RandomChaos_, Mario, Verve, John Games, SoapBar1242, AlexTheTroller, 128-Up, Nogard, Warren Buffet, snifit, YaBoiMarcAntony, twitch.tv/wolsk, kurath, vegetagoku2006, AlejoFangamer, Yoshi, AliceNobodi, Thenadertwo, very cool, Anuj071',
-            desc: '',
-            img: 'img/game/game.png',
-            link: '',
+            maker: 'arzztt, Skulldude, Verve, YaBoiMarcAntony',
+            desc: 'Ranking criteria: Fewest deaths (resetting counts as a death)',
+            img: 'img/game/fields.jpg',
+            link: 'https://www.mediafire.com/file/w2gbz1xo5maqd6p/I+Wanna+Explore+The+Rectilinear+Fields.zip/file',
             ranking: []
         }
     }
@@ -1171,8 +1171,8 @@ $ (document).ready(function() {
         el: '#app',
         data: {
             currentList: [
-                games.clown,
-                games.fries
+                games.physicist,
+                games.fields
             ],
             gameList: [
                 games.power,
@@ -1189,11 +1189,11 @@ $ (document).ready(function() {
                 games.v,
                 games.lookinside,
                 games.foundry,
-                games.jamplex
+                games.jamplex,
+                games.clown,
+                games.fries
             ],
             previewList: [
-                games.preview1,
-                games.preview2
             ],
             makerList: [
                 {
