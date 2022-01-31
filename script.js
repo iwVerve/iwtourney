@@ -30,7 +30,7 @@ $ (document).ready(function() {
 
     switching = false;
 
-    const nextGame = new Date('2022-01-05T12:00:00-05:00').getTime();
+    const nextGame = new Date('2022-02-05T12:00:00-05:00').getTime();
     const submitEnd = new Date('2022-02-03T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = Math.max(nextGame - Date.now(), 0);
@@ -1164,6 +1164,24 @@ $ (document).ready(function() {
             img: 'img/game/fields.jpg',
             link: 'https://www.mediafire.com/file/w2gbz1xo5maqd6p/I+Wanna+Explore+The+Rectilinear+Fields.zip/file',
             ranking: []
+        },
+        preview1: {
+            title: '???',
+            tags: [{tag: '▲60', class: 'difficulty'}, {tag: 'Adventure', class: 'adventure'}],
+            maker: '',
+            desc: '',
+            img: 'img/game/preview.jpg',
+            link: '',
+            ranking: []
+        },
+        preview2: {
+            title: '???',
+            tags: [{tag: '▲70', class: 'difficulty'}, {tag: 'Needle', class: 'needle'}],
+            maker: 'PoiMoi',
+            desc: '',
+            img: 'img/game/poi.jpg',
+            link: '',
+            ranking: []
         }
     }
 
@@ -1194,6 +1212,8 @@ $ (document).ready(function() {
                 games.fries
             ],
             previewList: [
+                games.preview1,
+                games.preview2
             ],
             makerList: [
                 {
