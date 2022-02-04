@@ -99,7 +99,7 @@ $ (document).ready(function() {
         <div class="leaderboard-entry">
             <span class="leaderboard-name"> &nbsp; {{entry.name}}</span>
             <a class="leaderboard-score" v-if="entry.link != ''" :href="entry.link" target="_blank">{{entry.score}}</a>
-            <span class="leaderboard-score" v-else :href="entry.link">{{entry.score}}</span>
+            <span class="leaderboard-score" v-else :href="entry.link" v-html="entry.score"></span>
         </div>
         `
     });
@@ -1154,7 +1154,34 @@ $ (document).ready(function() {
             desc: 'Ranking criteria: Fewest deaths (resetting counts as a death)',
             img: 'img/game/physicist.jpg',
             link: 'https://synthasmagoria.itch.io/nuclear-physicist?secret=mwihXHfCC7rs8YD5B6hyxQ7EYw',
-            ranking: []
+            ranking: [
+                {name: 'Cosmoing#9001', score: '236', link: 'https://youtu.be/IOocUoAjy20'},
+                {name: 'Mastermaxify#2893', score: '340', link: 'https://www.twitch.tv/videos/1280399942'},
+                {name: 'シュガー#6238', score: '430', link: 'https://youtu.be/wLMP92W80HQ'},
+                {name: 'constant#3007', score: '<em title="No video, moved out of top 3">399</em>', link: ''},
+                {name: 'Arras#6153', score: '464', link: ''},
+                {name: 'Stonk#3212', score: '471', link: 'https://www.twitch.tv/videos/1283372610'},
+                {name: 'chrisg#0492', score: '488', link: ''},
+                {name: 'Murzikk#6117', score: '519', link: 'https://www.youtube.com/watch?v=V9mBmbmJZMM'},
+                {name: 'touhoe#7049', score: '585', link: ''},
+                {name: 'TetraField#1275', score: '624', link: ''},
+                {name: 'bv#3948', score: '706', link: 'https://www.twitch.tv/videos/1280664519'},
+                {name: 'Jety#8150', score: '745', link: 'https://www.youtube.com/watch?v=89dS0A_Up9M'},
+                {name: 'フライ#9601', score: '747', link: 'https://live.nicovideo.jp/watch/lv335529166'},
+                {name: 'kurath#6671', score: '783', link: ''},
+                {name: 'Gaphodil#0058', score: '810', link: 'https://youtu.be/dHgcwE1JIa4'},
+                {name: 'Cabbage#2356', score: '817', link: ''},
+                {name: 'あずもる#3594', score: '851', link: 'https://www.youtube.com/watch?v=xrkYChesrVo&ab_channel=%E3%81%82%E3%81%9A%E3%82%82%E3%82%8B'},
+                {name: 'ナッツ#0286', score: '866', link: 'https://www.youtube.com/watch?v=r8MLkaDYk5g'},
+                {name: 'eevee314#5264', score: '902', link: 'https://youtu.be/iy2AxEnYtqw?t=266'},
+                {name: 'Huse#7457', score: '929', link: ''},
+                {name: 'どるっぴ#4013', score: '942', link: 'https://www.youtube.com/watch?v=3X1TTpUqHdo'},
+                {name: 'PlayerDash2017#4926', score: '1004', link: 'https://www.youtube.com/watch?v=nk-WcO53egk'},
+                {name: 'ぎょーざ#5156', score: '1019', link: 'https://youtu.be/82op0RadAnI'},
+                {name: 'ぶべ#1091', score: '1363', link: 'https://www.youtube.com/watch?v=9uAiSXzZU40'},
+                {name: 'bantsmen#3247', score: '2318', link: 'https://www.twitch.tv/videos/1280961883'},
+                {name: 'Tapxynyc#6041', score: '3305', link: ''}
+            ]
         },
         fields: {
             title: 'I Wanna Explore The Rectilinear Fields',
@@ -1163,7 +1190,35 @@ $ (document).ready(function() {
             desc: 'Ranking criteria: Fewest deaths (resetting counts as a death)',
             img: 'img/game/fields.jpg',
             link: 'https://www.mediafire.com/file/w2gbz1xo5maqd6p/I+Wanna+Explore+The+Rectilinear+Fields.zip/file',
-            ranking: []
+            ranking: [
+                {name: 'ElRaimon2000#9965', score: '405', link: 'https://youtu.be/Y-VWhlg76H0'},
+                {name: 'chrisg#0492', score: '459', link: 'https://drive.google.com/drive/u/0/folders/1iirQQN_ALgw3gpYhdHEUs6xa-9Qx1SKx'},
+                {name: 'bv#3948', score: '497', link: 'https://www.twitch.tv/videos/1280664519'},
+                {name: 'Stonk#3212', score: '512', link: 'https://www.twitch.tv/videos/1283372611'},
+                {name: 'Cosmoing#9001', score: '513', link: 'https://youtu.be/nOHpEyymuTE'},
+                {name: 'シュガー#6238', score: '543', link: 'https://youtu.be/wLMP92W80HQ'},
+                {name: 'あずもる#3594', score: '609', link: 'https://www.youtube.com/watch?v=Yp2gEw90GjU&ab_channel=%E3%81%82%E3%81%9A%E3%82%82%E3%82%8B'},
+                {name: 'P2#7591', score: '650', link: 'https://www.youtube.com/watch?v=hzhXNirgu7c'},
+                {name: 'Mastermaxify#2893', score: '704', link: 'https://www.twitch.tv/videos/1280399942'},
+                {name: 'Jety#8150', score: '710', link: 'https://www.youtube.com/watch?v=-3UBocFQYUE'},
+                {name: 'Cabbage#2356', score: '722', link: ''},
+                {name: 'anxKha#2007', score: '785', link: ''},
+                {name: 'EchoMask#8965', score: '920', link: ''},
+                {name: 'TPGPL#9098', score: '1006', link: ''},
+                {name: 'フライ#9601', score: '1044', link: 'https://live.nicovideo.jp/watch/lv335529166'},
+                {name: 'kurath#6671', score: '1047', link: ''},
+                {name: 'touhoe#7049', score: '1145', link: ''},
+                {name: 'eevee314#5264', score: '1180', link: 'https://youtu.be/h6YTgl0fNnQ?t=98'},
+                {name: 'Huse#7457', score: '1199', link: ''},
+                {name: 'ナッツ#0286', score: '1246', link: 'https://www.youtube.com/watch?v=2UtRYJztvA8'},
+                {name: 'constant#3007', score: '1259', link: ''},
+                {name: 'ぎょーざ#5156', score: '1417', link: 'https://pastebin.com/ePhTQNp7'},
+                {name: 'Arras#6153', score: '1424', link: ''},
+                {name: 'ぶべ#1091', score: '1650', link: 'https://www.youtube.com/watch?v=4-4hg6-HwCQ'},
+                {name: 'Havamati#1687', score: '2521', link: ''},
+                {name: 'Gaphodil#0058', score: '2655', link: ''},
+                {name: 'bantsmen#3247', score: '6052', link: 'https://pastebin.com/MxLFyg2B'}
+            ]
         },
         preview1: {
             title: '???',
