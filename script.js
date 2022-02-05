@@ -30,8 +30,8 @@ $ (document).ready(function() {
 
     switching = false;
 
-    const nextGame = new Date('2022-02-05T12:00:00-05:00').getTime();
-    const submitEnd = new Date('2022-02-03T12:00:00-05:00').getTime();
+    const nextGame = new Date('2022-02-12T12:00:00-05:00').getTime();
+    const submitEnd = new Date('2022-02-10T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = Math.max(nextGame - Date.now(), 0);
         var days = Math.floor(t / (24*60*60*1000));
@@ -1220,22 +1220,22 @@ $ (document).ready(function() {
                 {name: 'bantsmen#3247', score: '6052', link: 'https://pastebin.com/MxLFyg2B'}
             ]
         },
-        preview1: {
-            title: '???',
+        sasameku: {
+            title: 'I Wanna Say Sasameku',
             tags: [{tag: '▲60', class: 'difficulty'}, {tag: 'Adventure', class: 'adventure'}],
-            maker: '',
-            desc: '',
-            img: 'img/game/preview.jpg',
-            link: '',
+            maker: 'p00ks',
+            desc: 'Ranking criteria: Fastest time',
+            img: 'img/game/sasameku.jpg',
+            link: 'https://drive.google.com/file/d/1L0A_XpaOp1qZf358IjPnqfWV0TAc1ph6/view?usp=sharing',
             ranking: []
         },
-        preview2: {
-            title: '???',
+        noidle: {
+            title: 'Poi Moi\'s Noidle Goime',
             tags: [{tag: '▲70', class: 'difficulty'}, {tag: 'Needle', class: 'needle'}],
             maker: 'PoiMoi',
-            desc: '',
-            img: 'img/game/poi.jpg',
-            link: '',
+            desc: 'Ranking criteria: Fewest deaths',
+            img: 'img/game/noidle.jpg',
+            link: 'https://www.mediafire.com/file/jujg6hey2ofiz4m/PoiMois_Noidle_Goime.zip/file',
             ranking: []
         }
     }
@@ -1244,8 +1244,8 @@ $ (document).ready(function() {
         el: '#app',
         data: {
             currentList: [
-                games.physicist,
-                games.fields
+                games.sasameku,
+                games.noidle
             ],
             gameList: [
                 games.power,
@@ -1264,11 +1264,11 @@ $ (document).ready(function() {
                 games.foundry,
                 games.jamplex,
                 games.clown,
-                games.fries
+                games.fries,
+                games.physicist,
+                games.fields
             ],
             previewList: [
-                games.preview1,
-                games.preview2
             ],
             makerList: [
                 {
