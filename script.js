@@ -1237,6 +1237,15 @@ $ (document).ready(function() {
             img: 'img/game/noidle.jpg',
             link: 'https://www.mediafire.com/file/jujg6hey2ofiz4m/PoiMois_Noidle_Goime.zip/file',
             ranking: []
+        },
+        preview: {
+            title: '???',
+            tags: [{tag: '▲65', class: 'difficulty'}, {tag: 'Adventure', class: 'adventure'}],
+            maker: 'kurath',
+            desc: '',
+            img: 'img/game/preview.jpg',
+            link: '',
+            ranking: []
         }
     }
 
@@ -1269,6 +1278,7 @@ $ (document).ready(function() {
                 games.fields
             ],
             previewList: [
+                games.preview
             ],
             makerList: [
                 {
