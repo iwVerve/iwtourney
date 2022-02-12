@@ -30,8 +30,8 @@ $ (document).ready(function() {
 
     switching = false;
 
-    const nextGame = new Date('2022-02-12T12:00:00-05:00').getTime();
-    const submitEnd = new Date('2022-02-10T12:00:00-05:00').getTime();
+    const nextGame = new Date('2022-02-19T12:00:00-05:00').getTime();
+    const submitEnd = new Date('2022-02-17T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = Math.max(nextGame - Date.now(), 0);
         var days = Math.floor(t / (24*60*60*1000));
@@ -1285,13 +1285,13 @@ $ (document).ready(function() {
                 {name: 'bantsmen#3247', score: '8536', link: 'https://pastebin.com/mWShSNZq'}
             ]
         },
-        preview: {
-            title: '???',
+        minimetro: {
+            title: 'Minimetroidvania 4',
             tags: [{tag: '▲65', class: 'difficulty'}, {tag: 'Adventure', class: 'adventure'}],
             maker: 'kurath',
-            desc: '',
-            img: 'img/game/preview.jpg',
-            link: '',
+            desc: 'Ranking criteria: Fewest deaths',
+            img: 'img/game/minimetro.jpg',
+            link: 'https://drive.google.com/file/d/1KRUFq8wMxOqlOwrWYTt8visSvGdFjydY/view',
             ranking: []
         }
     }
@@ -1300,8 +1300,7 @@ $ (document).ready(function() {
         el: '#app',
         data: {
             currentList: [
-                games.sasameku,
-                games.noidle
+                games.minimetro
             ],
             gameList: [
                 games.power,
@@ -1322,10 +1321,11 @@ $ (document).ready(function() {
                 games.clown,
                 games.fries,
                 games.physicist,
-                games.fields
+                games.fields,
+                games.sasameku,
+                games.noidle
             ],
             previewList: [
-                games.preview
             ],
             makerList: [
                 {
