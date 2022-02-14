@@ -1297,6 +1297,24 @@ $ (document).ready(function() {
             img: 'img/game/minimetro.jpg',
             link: 'https://drive.google.com/file/d/1KRUFq8wMxOqlOwrWYTt8visSvGdFjydY/view',
             ranking: []
+        },
+        preview1: {
+            title: '???',
+            tags: [{tag: '▲55', class: 'difficulty'}, {tag: 'Needle', class: 'needle'}],
+            maker: 'IanBoy141',
+            desc: '',
+            img: 'img/game/preview.jpg',
+            link: '',
+            ranking: []
+        },
+        preview2: {
+            title: '?o?o?o',
+            tags: [{tag: '▲idk', class: 'difficulty'}, {tag: 'Needle', class: 'needle'}],
+            maker: '?e??e',
+            desc: '',
+            img: 'img/game/preview.jpg',
+            link: '',
+            ranking: []
         }
     }
 
@@ -1330,6 +1348,8 @@ $ (document).ready(function() {
                 games.noidle
             ],
             previewList: [
+                games.preview1,
+                games.preview2
             ],
             makerList: [
                 {
