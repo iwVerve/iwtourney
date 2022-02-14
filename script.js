@@ -7,6 +7,7 @@ clickTab = function(id) {
 
         $("#"+tabCurrent).fadeOut(150, function(){
             tabCurrent = id;
+            history.replaceState({}, '', window.location.pathname+'#'+id);
             $("#"+id).fadeIn(150);
             switching = false;
         });
@@ -26,7 +27,10 @@ showhideLeaderboard = function(el) {
 }
 
 $ (document).ready(function() {
-    tabCurrent = 'about';
+    tabCurrent = window.location.hash.substring(1);
+    if (tabCurrent != 'games' && tabCurrent != 'makers') {
+        tabCurrent = 'about';
+    }
 
     switching = false;
 
@@ -1578,6 +1582,7 @@ $ (document).ready(function() {
     });
 
     //clickTab("about");
-    $("#about").fadeIn(0);
+    $(`#${tabCurrent}`).fadeIn(0);
+    $('#tab'+tabCurrent).addClass('active');
     setInterval(updateTimer, 200);
 });
