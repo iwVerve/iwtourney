@@ -34,8 +34,8 @@ $ (document).ready(function() {
 
     switching = false;
 
-    const nextGame = new Date('2022-02-19T12:00:00-05:00').getTime();
-    const submitEnd = new Date('2022-02-17T12:00:00-05:00').getTime();
+    const nextGame = new Date('2022-02-26T12:00:00-05:00').getTime();
+    const submitEnd = new Date('2022-02-24T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = Math.max(nextGame - Date.now(), 0);
         var days = Math.floor(t / (24*60*60*1000));
@@ -1324,22 +1324,22 @@ $ (document).ready(function() {
                 {name: 'このみ(兄)#8859', score: '2995', link: 'https://www.twitch.tv/konomiani/videos?filter=all&sort=time'}
             ]
         },
-        preview1: {
-            title: '???',
+        nukeru: {
+            title: 'I wanna Nukeru Spike',
             tags: [{tag: '▲55', class: 'difficulty'}, {tag: 'Needle', class: 'needle'}],
             maker: 'IanBoy141',
-            desc: '',
-            img: 'img/game/preview.jpg',
-            link: '',
+            desc: 'Ranking criteria: Fastest time',
+            img: 'img/game/nukeru.jpg',
+            link: 'https://www.mediafire.com/file/jhkj9f6ca6jzx4m/I+wanna+Nukeru+Spike+v1.0.zip/file',
             ranking: []
         },
-        preview2: {
-            title: '?o?o?o',
-            tags: [{tag: '▲idk', class: 'difficulty'}, {tag: 'Needle', class: 'needle'}],
-            maker: '?e??e',
-            desc: '',
-            img: 'img/game/preview.jpg',
-            link: '',
+        vorovo: {
+            title: 'VoRoVo',
+            tags: [{tag: '▲78', class: 'difficulty'}, {tag: 'Needle', class: 'needle'}],
+            maker: 'Verve',
+            desc: 'Ranking criteria: Fewest deaths',
+            img: 'img/game/vorovo.jpg',
+            link: 'https://www.mediafire.com/file/93eqyrvan9j15w5/VoRoVo.zip/file',
             ranking: []
         }
     }
@@ -1348,7 +1348,8 @@ $ (document).ready(function() {
         el: '#app',
         data: {
             currentList: [
-                games.minimetro
+                games.nukeru,
+                games.vorovo
             ],
             gameList: [
                 games.power,
@@ -1371,11 +1372,10 @@ $ (document).ready(function() {
                 games.physicist,
                 games.fields,
                 games.sasameku,
-                games.noidle
+                games.noidle,
+                games.minimetro
             ],
             previewList: [
-                games.preview1,
-                games.preview2
             ],
             makerList: [
                 {
