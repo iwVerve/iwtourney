@@ -1341,6 +1341,15 @@ $ (document).ready(function() {
             img: 'img/game/vorovo.jpg',
             link: 'https://www.mediafire.com/file/93eqyrvan9j15w5/VoRoVo.zip/file',
             ranking: []
+        },
+        preview: {
+            title: '???',
+            tags: [{tag: '▲55', class: 'difficulty'}, {tag: 'Adventure', class: 'adventure'}],
+            maker: 'Juan285',
+            desc: '',
+            img: 'img/game/preview.jpg',
+            link: '',
+            ranking: []
         }
     }
 
@@ -1376,6 +1385,7 @@ $ (document).ready(function() {
                 games.minimetro
             ],
             previewList: [
+                games.preview
             ],
             makerList: [
                 {
