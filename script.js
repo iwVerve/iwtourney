@@ -35,7 +35,7 @@ $ (document).ready(function() {
     switching = false;
 
     const nextGame = new Date('2022-02-27T12:00:00-05:00').getTime();
-    const submitEnd = new Date('2022-02-24T12:00:00-05:00').getTime();
+    const submitEnd = new Date('2022-03-04T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = Math.max(nextGame - Date.now(), 0);
         var days = Math.floor(t / (24*60*60*1000));
@@ -1413,13 +1413,13 @@ $ (document).ready(function() {
                 {name: 'bantsmen#3247', score: '9580', link: 'https://pastebin.com/WTMLm8FN'}
             ]
         },
-        preview: {
-            title: '???',
+        parental: {
+            title: 'I Wanna Defeat The Parental Control',
             tags: [{tag: '▲55', class: 'difficulty'}, {tag: 'Adventure', class: 'adventure'}],
             maker: 'Juan285',
-            desc: '',
-            img: 'img/game/preview.jpg',
-            link: '',
+            desc: 'Ranking Criteria: Fewest Resets',
+            img: 'img/game/parental.jpg',
+            link: 'https://www.dropbox.com/s/wq9kyqtdspi1zyc/I%20wanna%20defeat%20the%20Parental%20Control%20%5Bver0.0.4%5D.ZIP',
             ranking: []
         }
     }
@@ -1428,8 +1428,7 @@ $ (document).ready(function() {
         el: '#app',
         data: {
             currentList: [
-                games.nukeru,
-                games.vorovo
+                games.parental
             ],
             gameList: [
                 games.power,
@@ -1453,10 +1452,11 @@ $ (document).ready(function() {
                 games.fields,
                 games.sasameku,
                 games.noidle,
-                games.minimetro
+                games.minimetro,
+                games.nukeru,
+                games.vorovo
             ],
             previewList: [
-                games.preview
             ],
             makerList: [
                 {
