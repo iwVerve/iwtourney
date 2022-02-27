@@ -34,7 +34,7 @@ $ (document).ready(function() {
 
     switching = false;
 
-    const nextGame = new Date('2022-02-26T12:00:00-05:00').getTime();
+    const nextGame = new Date('2022-02-27T12:00:00-05:00').getTime();
     const submitEnd = new Date('2022-02-24T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = Math.max(nextGame - Date.now(), 0);
