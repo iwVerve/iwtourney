@@ -34,7 +34,7 @@ $ (document).ready(function() {
 
     switching = false;
 
-    const nextGame = new Date('2022-02-27T12:00:00-05:00').getTime();
+    const nextGame = new Date('2022-03-05T12:00:00-05:00').getTime();
     const submitEnd = new Date('2022-03-04T12:00:00-05:00').getTime();
     function updateTimer() {
         var t = Math.max(nextGame - Date.now(), 0);
@@ -1421,6 +1421,15 @@ $ (document).ready(function() {
             img: 'img/game/parental.jpg',
             link: 'https://www.dropbox.com/s/wq9kyqtdspi1zyc/I%20wanna%20defeat%20the%20Parental%20Control%20%5Bver0.0.4%5D.ZIP',
             ranking: []
+        },
+        ceremony: {
+            title: 'Awards Ceremony',
+            tags: [{tag: '▲0', class: 'difficulty'}, {tag: 'Event', class: 'event'}],
+            maker: 'arzztt',
+            desc: '',
+            img: 'img/game/ceremony.png',
+            link: '',
+            ranking: []
         }
     }
 
@@ -1457,6 +1466,7 @@ $ (document).ready(function() {
                 games.vorovo
             ],
             previewList: [
+                games.ceremony
             ],
             makerList: [
                 {

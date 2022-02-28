@@ -170,7 +170,8 @@ h6 {
 .avoidance,
 .luck,
 .difficulty,
-.special
+.special,
+.event
 {
     margin: 0 0.6rem;
     padding: 3px 8px;
@@ -203,6 +204,10 @@ h6 {
 
 .special {
     background-color: gray;
+}
+
+.event {
+    background-color: purple;
 }
 
 .game-makers {
