@@ -1459,7 +1459,7 @@ $ (document).ready(function() {
             maker: 'arzztt',
             desc: '',
             img: 'img/game/ceremony.png',
-            link: 'https://www.twitch.tv/arzztt',
+            link: 'https://www.twitch.tv/videos/1416298697',
             ranking: []
         }
     }
