@@ -81,7 +81,8 @@ $ (document).ready(function() {
                     <p class="game-description" style="text-align: center" v-html="game.desc"></p>
                 </div>
                 <div class="game-right-bar">
-                    <a v-if="game.link != ''" :href="game.link" class="download-button" target="_blank"><img src="img/icon/download.png">Download</a>
+                    <a v-if="game.tags[1].tag == 'Event'" :href="game.link" class="download-button" target="_blank"><img src="img/icon/play.png">Watch</a>
+                    <a v-else-if="game.link != ''" :href="game.link" class="download-button" target="_blank"><img src="img/icon/download.png">Download</a>
                     <div v-else href="" class="download-button countdown nextTimer" target="_blank">0:00:00</div>
                     <button class="leaderboard-button" v-if="game.ranking.length != 0" onclick="showhideLeaderboard(this)"> <img src="img/icon/open.png"> </button>
                 </div>
@@ -1458,7 +1459,7 @@ $ (document).ready(function() {
             maker: 'arzztt',
             desc: '',
             img: 'img/game/ceremony.png',
-            link: '',
+            link: 'https://www.twitch.tv/arzztt',
             ranking: []
         }
     }
@@ -1467,7 +1468,7 @@ $ (document).ready(function() {
         el: '#app',
         data: {
             currentList: [
-                games.parental
+                games.ceremony
             ],
             gameList: [
                 games.power,
@@ -1493,10 +1494,10 @@ $ (document).ready(function() {
                 games.noidle,
                 games.minimetro,
                 games.nukeru,
-                games.vorovo
+                games.vorovo,
+                games.parental
             ],
             previewList: [
-                games.ceremony
             ],
             makerList: [
                 {
