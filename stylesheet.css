@@ -114,6 +114,12 @@ h6 {
     padding: 0 16rem;
 }
 
+.about-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .game-container {
     display: flex;
     flex-flow: column nowrap;
@@ -413,4 +419,5 @@ h6 {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    margin: 0.5rem;
 }
