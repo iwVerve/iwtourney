@@ -1592,8 +1592,8 @@ $ (document).ready(function() {
                 },
                 {
                     name: 'Jopagu',
-                    img: 'img/maker/jopagu.png',
-                    links: []
+                    img: 'img/maker/monster.png',
+                    links: [{link: 'https://www.mediafire.com/file/gd8gdey62qi7d0u/Crossword.zip/file', img: 'img/icon/monster.png'}]
                 },
                 {
                     name: 'Kai',
